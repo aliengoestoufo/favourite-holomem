@@ -3,7 +3,7 @@ const members = [
   {
     name:"Todoroki Hajime",
     tag:"DEV_IS · Regloss",
-    accent:"#EE82EE",
+    accent:"#DBB8FF",
     desc:"Add Hajime's bio here — background, debut date, and what makes him your favourite.",
     photos:3
   },
@@ -21,6 +21,13 @@ const members = [
     desc:"Add Fubuki's bio here — the everyday elite fox, GAMERS founding member.",
     photos:3
   },
+    {
+    name:"Ookami Mio",
+    tag:"hololive · GAMERS",
+    accent:"#FF2E2E",
+    desc:"Add Okayu's bio here — laid-back cat with the iconic laugh, GAMERS member.",
+    photos:3
+  },
   {
     name:"Inugami Korone",
     tag:"hololive · GAMERS",
@@ -31,14 +38,7 @@ const members = [
   {
     name:"Nekomata Okayu",
     tag:"hololive · GAMERS",
-    accent:"#ffb26b",
-    desc:"Add Okayu's bio here — laid-back cat with the iconic laugh, GAMERS member.",
-    photos:3
-  },
-  {
-    name:"Oozora Subaru",
-    tag:"hololive · GAMERS",
-    accent:"#9b8cf2",
+    accent:"#A200FF",
     desc:"Add Subaru's bio here — hardworking crow, GAMERS' resident idol enthusiast.",
     photos:3
   },
