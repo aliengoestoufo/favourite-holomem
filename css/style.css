@@ -388,7 +388,7 @@ body.blur-bg main{
 .nav-arrow:hover{
   border-color:var(--card-accent, var(--accent));
   background:rgba(10,14,30,0.8);
-}
+} 
 
 .nav-arrow svg{ width:20px; height:20px; }
 
