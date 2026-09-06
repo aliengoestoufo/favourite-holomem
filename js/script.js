@@ -2,8 +2,8 @@
 const members = [
   {
     name:"Todoroki Hajime",
-    tag:"holoStars English · Justice",
-    accent:"#ff6b35",
+    tag:"DEV_IS · Regloss",
+    accent:"#EE82EE",
     desc:"Add Hajime's bio here — background, debut date, and what makes him your favourite.",
     photos:3
   },
