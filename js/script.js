@@ -4,7 +4,7 @@ const members = [
     name:"Todoroki Hajime",
     tag:"DEV_IS · Regloss",
     accent:"#DBB8FF",
-    desc:"Add Hajime's bio here — background, debut date, and what makes him your favourite.",
+    desc:"description here about her and stuff",
     photos:3
   },
   {
