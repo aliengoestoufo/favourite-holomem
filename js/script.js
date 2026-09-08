@@ -1,112 +1,145 @@
 /* ============ DATA ============ */
-const members = [
-  {
-    name:"Todoroki Hajime",
-    tag:"DEV_IS · Regloss",
-    accent:"#DBB8FF",
-    desc:"description here about her and stuff",
-    photos:3
-  },
-  {
-    name:"Mori Calliope",
-    tag:"hololive English · Myth",
-    accent:"#e63950",
-    desc:"Add Calliope's bio here — reaper rapper of Hololive English, first gen Myth.",
-    photos:3
-  },
-  {
-    name:"Shirakami Fubuki",
-    tag:"hololive · GAMERS",
-    accent:"#8ecae6",
-    desc:"Add Fubuki's bio here — the everyday elite fox, GAMERS founding member.",
-    photos:3
-  },
-    {
-    name:"Ookami Mio",
-    tag:"hololive · GAMERS",
-    accent:"#FF2E2E",
-    desc:"Add Okayu's bio here — laid-back cat with the iconic laugh, GAMERS member.",
-    photos:3
-  },
-  {
-    name:"Inugami Korone",
-    tag:"hololive · GAMERS",
-    accent:"#52d1a3",
-    desc:"Add Korone's bio here — energetic dog, gaming marathoner of GAMERS.",
-    photos:3
-  },
-  {
-    name:"Nekomata Okayu",
-    tag:"hololive · GAMERS",
-    accent:"#A200FF",
-    desc:"Add Subaru's bio here — hardworking crow, GAMERS' resident idol enthusiast.",
-    photos:3
-  },
-  {
-    name:"Watson Amelia",
-    tag:"hololive English · Myth",
-    accent:"#ffd166",
-    desc:"Add Amelia's bio here — time-travelling detective, Myth gen member.",
-    photos:3
-  },
-  {
-    name:"Gawr Gura",
-    tag:"hololive English · Myth",
-    accent:"#4cc9f0",
-    desc:"Add Gura's bio here — shark idol, most subscribed VTuber, Myth gen member.",
-    photos:3
-  },
-  {
-    name:"Takanashi Kiara",
-    tag:"hololive English · Myth",
-    accent:"#ff5e5b",
-    desc:"Add Kiara's bio here — fiery phoenix, Myth gen member.",
-    photos:3
-  },
-  {
-    name:"Ninomae Ina'nis",
-    tag:"hololive English · Myth",
-    accent:"#7b2ff7",
-    desc:"Add Ina'nis' bio here — cosmic priestess and artist, Myth gen member.",
-    photos:3
-  }
+/* Flat list of generations/units — no branch grouping, per the latest restructure.
+   Each member: [name, status?]  status: "alum" | "affiliate" (omit for active members) */
+const sections = [
+  { id:"gen0", label:"Gen 0", accent:"#38bdf8", members:[
+    ["Tokino Sora"],["Robocosan"],["AZKi"],["Sakura Miko"],["Hoshimachi Suisei"]
+  ]},
+  { id:"gen1", label:"Gen 1", accent:"#f59e0b", members:[
+    ["Aki Rosenthal"],["Akai Haato"],["Shirakami Fubuki"],["Natsuiro Matsuri"]
+  ]},
+  { id:"gen2", label:"Gen 2", accent:"#ec4899", members:[
+    ["Nakiri Ayame"],["Yuzuki Choco"],["Oozora Subaru"],["Minato Aqua","alum"],["Murasaki Shion","alum"]
+  ]},
+  { id:"gamers", label:"GAMERS", accent:"#10b981", members:[
+    ["Shirakami Fubuki"],["Ookami Mio"],["Nekomata Okayu"],["Inugami Korone"]
+  ]},
+  { id:"gen3", label:"Gen 3", accent:"#ef4444", members:[
+    ["Usada Pekora"],["Shiranui Flare"],["Shirogane Noel"],["Houshou Marine"]
+  ]},
+  { id:"gen4", label:"Gen 4", accent:"#8b5cf6", members:[
+    ["Tsunomaki Watame"],["Tokoyami Towa"],["Himemori Luna"],["Amane Kanata","alum"],["Kiryu Coco","alum"]
+  ]},
+  { id:"gen5", label:"Gen 5", accent:"#0ea5e9", members:[
+    ["Yukihana Lamy"],["Momosuzu Nene"],["Shishiro Botan"],["Omaru Polka"]
+  ]},
+  { id:"holox", label:"holoX", accent:"#a855f7", members:[
+    ["La+ Darknesss"],["Takane Lui"],["Hakui Koyori"],["Kazama Iroha"],["Sakamata Chloe","affiliate"]
+  ]},
+  { id:"id", label:"Indonesia", accent:"#f97316", members:[
+    ["Ayunda Risu"],["Moona Hoshinova"],["Airani Iofifteen"],["Kureiji Ollie"],["Anya Melfissa"],
+    ["Pavolia Reine"],["Vestia Zeta"],["Kaela Kovalskia"],["Kobo Kanaeru"]
+  ]},
+  { id:"myth", label:"Myth", accent:"#dc2626", members:[
+    ["Mori Calliope"],["Takanashi Kiara"],["Ninomae Ina'nis"],["Watson Amelia","affiliate"],["Gawr Gura","alum"]
+  ]},
+  { id:"hope", label:"Project: HOPE", accent:"#eab308", members:[
+    ["IRyS"]
+  ]},
+  { id:"council", label:"Council", accent:"#3b82f6", members:[
+    ["Ouro Kronii"],["Hakos Baelz"],["Tsukumo Sana","alum"],["Ceres Fauna","alum"],["Nanashi Mumei","alum"]
+  ]},
+  { id:"advent", label:"Advent", accent:"#c026d3", members:[
+    ["Shiori Novella"],["Koseki Bijou"],["Nerissa Ravencroft"],["Fuwawa Abyssgard"],["Mococo Abyssgard"]
+  ]},
+  { id:"justice", label:"Justice", accent:"#06b6d4", members:[
+    ["Elizabeth Rose Bloodflame"],["Gigi Murin"],["Cecilia Immergreen"],["Raora Panthera"]
+  ]},
+  { id:"regloss", label:"ReGLOSS", accent:"#f43f5e", members:[
+    ["Otonose Kanade"],["Ichijou Ririka"],["Juufuutei Raden"],["Todoroki Hajime"],["Hiodoshi Ao","alum"]
+  ]},
+  { id:"flowglow", label:"FLOW GLOW", accent:"#65a30d", members:[
+    ["Isaki Riona"],["Koganei Niko"],["Mizumiya Su"],["Rindo Chihaya"],["Kikirara Vivi"]
+  ]},
 ];
+
+const STATUS_LABEL = { alum:"Alum", affiliate:"Affiliate" };
+
+/* Flatten into one ordered list so the popup can cycle through everyone */
+const members = [];
+sections.forEach(section=>{
+  section.members.forEach(([name, status])=>{
+    members.push({
+      name,
+      status: status || null,
+      tag: section.label,
+      accent: section.accent,
+      desc: `Add ${name}'s bio here.`,
+      photos: 3
+    });
+  });
+});
 
 let currentIndex = 0;
 let currentPhoto = 0;
 
-/* ============ BACKGROUND DOTS ============ */
-const dotField = document.getElementById('dot-field');
-const DOT_COUNT = 70;
-for(let i=0;i<DOT_COUNT;i++){
-  const d = document.createElement('div');
-  d.className = 'dot';
-  const size = Math.random()*3 + 1.5;
-  d.style.width = size+'px';
-  d.style.height = size+'px';
-  d.style.left = Math.random()*100+'%';
-  d.style.top = Math.random()*100+'%';
-  d.style.setProperty('--peak', (Math.random()*0.5+0.4).toFixed(2));
-  d.style.animationDuration = (Math.random()*5 + 3.5)+'s';
-  d.style.animationDelay = (Math.random()*6)+'s';
-  dotField.appendChild(d);
+/* ============ BACKGROUND BLOBS ============ */
+const blobField = document.getElementById('blob-field');
+const blobColors = ['#bfe0ff', '#93c5fd', '#7dd3fc', '#a5b4fc', '#c7d2fe'];
+const BLOB_COUNT = 6;
+for(let i=0;i<BLOB_COUNT;i++){
+  const b = document.createElement('div');
+  b.className = 'blob';
+  const size = Math.random()*260 + 260;
+  b.style.width = size+'px';
+  b.style.height = size+'px';
+  b.style.left = Math.random()*90+'%';
+  b.style.top = Math.random()*90+'%';
+  b.style.background = blobColors[i % blobColors.length];
+  b.style.animationDuration = (Math.random()*18 + 26)+'s';
+  b.style.animationDelay = (Math.random()*-30)+'s';
+  b.style.setProperty('--dx', (Math.random()*220 - 110)+'px');
+  b.style.setProperty('--dy', (Math.random()*220 - 110)+'px');
+  blobField.appendChild(b);
 }
 
-/* ============ RENDER GRID ============ */
-const grid = document.getElementById('grid');
+/* ============ RENDER NAV (flat pill capsule) ============ */
+const navPillsEl = document.getElementById('navPills');
 const personIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"></path></svg>`;
 
-members.forEach((m, i)=>{
-  const card = document.createElement('button');
-  card.className = 'card';
-  card.style.setProperty('--card-accent', m.accent);
-  card.innerHTML = `
-    <div class="card-photo">${personIcon}</div>
-    <div class="card-name">${m.name}</div>
-    <div class="card-tag"><span class="card-dot"></span>${m.tag}</div>
-  `;
-  card.addEventListener('click', ()=> openModal(i));
-  grid.appendChild(card);
+sections.forEach(section=>{
+  const a = document.createElement('a');
+  a.href = `#${section.id}`;
+  a.className = 'nav-pill';
+  a.textContent = section.label;
+  a.style.setProperty('--pill-accent', section.accent);
+  navPillsEl.appendChild(a);
+});
+
+/* ============ RENDER SECTIONS ============ */
+const content = document.getElementById('content');
+let flatIndex = 0;
+
+sections.forEach(section=>{
+  const sectionEl = document.createElement('section');
+  sectionEl.className = 'section';
+  sectionEl.id = section.id;
+
+  const sectionTitle = document.createElement('h2');
+  sectionTitle.className = 'section-title';
+  sectionTitle.innerHTML = `<span class="section-dot" style="--dot-accent:${section.accent}"></span>${section.label}`;
+  sectionEl.appendChild(sectionTitle);
+
+  const grid = document.createElement('div');
+  grid.className = 'grid';
+
+  section.members.forEach(([name, status])=>{
+    const i = flatIndex++;
+    const card = document.createElement('button');
+    card.className = 'card';
+    card.style.setProperty('--card-accent', section.accent);
+    const statusBit = status ? ` · ${STATUS_LABEL[status]}` : '';
+    card.innerHTML = `
+      <div class="card-photo">${personIcon}</div>
+      <div class="card-name">${name}</div>
+      <div class="card-tag"><span class="card-dot"></span>${section.label}${statusBit}</div>
+    `;
+    card.addEventListener('click', ()=> openModal(i));
+    grid.appendChild(card);
+  });
+
+  sectionEl.appendChild(grid);
+  content.appendChild(sectionEl);
 });
 
 /* ============ MODAL ============ */
@@ -122,7 +155,7 @@ const closeBtn = document.getElementById('closeBtn');
 function renderPanel(index, photoIndex){
   const m = members[index];
   panel.style.setProperty('--card-accent', m.accent);
-  panelTag.textContent = m.tag;
+  panelTag.textContent = m.status ? `${m.tag} · ${STATUS_LABEL[m.status]}` : m.tag;
   panelName.textContent = m.name;
   panelDesc.innerHTML = m.desc + `<span class="placeholder-note">Placeholder text &mdash; swap in the real bio.</span>`;
   mediaLabel.textContent = `Full body image ${photoIndex+1} of ${m.photos} goes here`;
@@ -201,3 +234,14 @@ document.addEventListener('mousemove', (e)=>{
 
 prevArrow.addEventListener('click', ()=> changeMember('prev'));
 nextArrow.addEventListener('click', ()=> changeMember('next'));
+
+/* ============ BACK TO TOP ============ */
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', ()=>{
+  backToTop.classList.toggle('visible', window.scrollY > 400);
+});
+
+backToTop.addEventListener('click', ()=>{
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
