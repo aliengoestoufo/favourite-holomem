@@ -1,49 +1,57 @@
 /* ============ DATA ============ */
 const sections = [
-  { id:"gen0", label:"Gen 0", accent:"#38bdf8", members:[
+  { id:"gen0", label:"Gen 0", accent:"#38bdf8", flag:"🇯🇵", members:[
     ["Tokino Sora"],["Robocosan"],["AZKi"],["Sakura Miko"],["Hoshimachi Suisei"]
   ]},
-  { id:"gen1", label:"Gen 1", accent:"#f59e0b", members:[
+  { id:"gen1", label:"Gen 1", accent:"#f59e0b", flag:"🇯🇵", members:[
     ["Aki Rosenthal"],["Akai Haato"],["Shirakami Fubuki"],["Natsuiro Matsuri"]
   ]},
-  { id:"gen2", label:"Gen 2", accent:"#ec4899", members:[
+  { id:"gen2", label:"Gen 2", accent:"#ec4899", flag:"🇯🇵", members:[
     ["Nakiri Ayame"],["Yuzuki Choco"],["Oozora Subaru"],["Minato Aqua","alum"],["Murasaki Shion","alum"]
   ]},
-  { id:"gamers", label:"GAMERS", accent:"#10b981", members:[
+  { id:"gamers", label:"GAMERS", accent:"#10b981", flag:"🇯🇵", members:[
     ["Shirakami Fubuki"],["Ookami Mio"],["Nekomata Okayu"],["Inugami Korone"]
   ]},
-  { id:"gen3", label:"Gen 3", accent:"#ef4444", members:[
+  { id:"gen3", label:"Gen 3", accent:"#ef4444", flag:"🇯🇵", members:[
     ["Usada Pekora"],["Shiranui Flare"],["Shirogane Noel"],["Houshou Marine"]
   ]},
-  { id:"gen4", label:"Gen 4", accent:"#8b5cf6", members:[
+  { id:"gen4", label:"Gen 4", accent:"#8b5cf6", flag:"🇯🇵", members:[
     ["Tsunomaki Watame"],["Tokoyami Towa"],["Himemori Luna"],["Amane Kanata","alum"],["Kiryu Coco","alum"]
   ]},
-  { id:"gen5", label:"Gen 5", accent:"#0ea5e9", members:[
+  { id:"gen5", label:"Gen 5", accent:"#0ea5e9", flag:"🇯🇵", members:[
     ["Yukihana Lamy"],["Momosuzu Nene"],["Shishiro Botan"],["Omaru Polka"]
   ]},
-  { id:"holox", label:"holoX", accent:"#a855f7", members:[
+  { id:"holox", label:"holoX", accent:"#a855f7", flag:"🇯🇵", members:[
     ["La+ Darknesss"],["Takane Lui"],["Hakui Koyori"],["Kazama Iroha"],["Sakamata Chloe","affiliate"]
   ]},
-  { id:"id", label:"Indonesia", accent:"#f97316", members:[
-    ["Ayunda Risu"],["Moona Hoshinova"],["Airani Iofifteen"],["Kureiji Ollie"],["Anya Melfissa"],
-    ["Pavolia Reine"],["Vestia Zeta"],["Kaela Kovalskia"],["Kobo Kanaeru"]
+  { id:"area15", label:"AREA15", accent:"#f97316", flag:"🇮🇩", members:[
+    ["Ayunda Risu"],["Moona Hoshinova"],["Airani Iofifteen"]
   ]},
-  { id:"myth", label:"Myth", accent:"#dc2626", members:[
+  { id:"holoro", label:"HOLORO", accent:"#fb923c", flag:"🇮🇩", members:[
+    ["Kureiji Ollie"],["Anya Melfissa"],["Pavolia Reine"]
+  ]},
+  { id:"holoh3ro", label:"holoH3RO", accent:"#ea580c", flag:"🇮🇩", members:[
+    ["Vestia Zeta"],["Kaela Kovalskia"],["Kobo Kanaeru"]
+  ]},
+  { id:"myth", label:"Myth", accent:"#dc2626", flag:"🌐", members:[
     ["Mori Calliope"],["Takanashi Kiara"],["Ninomae Ina'nis"],["Watson Amelia","affiliate"],["Gawr Gura","alum"]
   ]},
-  { id:"council", label:"Council", accent:"#3b82f6", members:[
-    ["Ouro Kronii"],["Hakos Baelz"],["IRyS"]
+  { id:"hope", label:"Project: HOPE", accent:"#eab308", flag:"🌐", members:[
+    ["IRyS"]
   ]},
-  { id:"advent", label:"Advent", accent:"#c026d3", members:[
+  { id:"council", label:"Council", accent:"#3b82f6", flag:"🌐", members:[
+    ["Ouro Kronii"],["Hakos Baelz"],["Tsukumo Sana","alum"],["Ceres Fauna","alum"],["Nanashi Mumei","alum"]
+  ]},
+  { id:"advent", label:"Advent", accent:"#c026d3", flag:"🌐", members:[
     ["Shiori Novella"],["Koseki Bijou"],["Nerissa Ravencroft"],["Fuwawa Abyssgard"],["Mococo Abyssgard"]
   ]},
-  { id:"justice", label:"Justice", accent:"#06b6d4", members:[
+  { id:"justice", label:"Justice", accent:"#06b6d4", flag:"🌐", members:[
     ["Elizabeth Rose Bloodflame"],["Gigi Murin"],["Cecilia Immergreen"],["Raora Panthera"]
   ]},
-  { id:"regloss", label:"ReGLOSS", accent:"#f43f5e", members:[
+  { id:"regloss", label:"ReGLOSS", accent:"#f43f5e", flag:"🇯🇵", members:[
     ["Otonose Kanade"],["Ichijou Ririka"],["Juufuutei Raden"],["Todoroki Hajime"],["Hiodoshi Ao","alum"]
   ]},
-  { id:"flowglow", label:"FLOW GLOW", accent:"#65a30d", members:[
+  { id:"flowglow", label:"FLOW GLOW", accent:"#65a30d", flag:"🇯🇵", members:[
     ["Isaki Riona"],["Koganei Niko"],["Mizumiya Su"],["Rindo Chihaya"],["Kikirara Vivi"]
   ]},
 ];
@@ -59,6 +67,7 @@ sections.forEach(section=>{
       status: status || null,
       tag: section.label,
       accent: section.accent,
+      flag: section.flag,
       desc: `Add ${name}'s bio here.`,
       photos: 3
     });
@@ -101,6 +110,27 @@ sections.forEach(section=>{
   navPillsEl.appendChild(a);
 });
 
+/* ============ NAV LIQUID SHIMMER (follows cursor) ============ */
+const pillNavGlass = document.querySelector('.pill-nav-glass');
+pillNavGlass.addEventListener('mousemove', (e)=>{
+  const rect = pillNavGlass.getBoundingClientRect();
+  const x = ((e.clientX - rect.left) / rect.width) * 100;
+  const y = ((e.clientY - rect.top) / rect.height) * 100;
+  pillNavGlass.style.setProperty('--mx', x + '%');
+  pillNavGlass.style.setProperty('--my', y + '%');
+});
+pillNavGlass.addEventListener('mouseenter', ()=> pillNavGlass.classList.add('glow-active'));
+pillNavGlass.addEventListener('mouseleave', ()=> pillNavGlass.classList.remove('glow-active'));
+
+/* Let vertical mouse-wheel scroll the pill row horizontally too, since
+   it's wider than the viewport at this many sections */
+navPillsEl.addEventListener('wheel', (e)=>{
+  if(Math.abs(e.deltaY) > Math.abs(e.deltaX)){
+    navPillsEl.scrollLeft += e.deltaY;
+    e.preventDefault();
+  }
+}, { passive:false });
+
 /* ============ RENDER SECTIONS ============ */
 const content = document.getElementById('content');
 let flatIndex = 0;
@@ -112,7 +142,7 @@ sections.forEach(section=>{
 
   const sectionTitle = document.createElement('h2');
   sectionTitle.className = 'section-title';
-  sectionTitle.innerHTML = `<span class="section-dot" style="--dot-accent:${section.accent}"></span>${section.label}`;
+  sectionTitle.innerHTML = `<span class="section-dot" style="--dot-accent:${section.accent}">${section.flag}</span>${section.label}`;
   sectionEl.appendChild(sectionTitle);
 
   const grid = document.createElement('div');
@@ -127,7 +157,7 @@ sections.forEach(section=>{
     card.innerHTML = `
       <div class="card-photo">${personIcon}</div>
       <div class="card-name">${name}</div>
-      <div class="card-tag"><span class="card-dot"></span>${section.label}${statusBit}</div>
+      <div class="card-tag"><span class="card-dot">${section.flag}</span>${section.label}${statusBit}</div>
     `;
     card.addEventListener('click', ()=> openModal(i));
     grid.appendChild(card);
