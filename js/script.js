@@ -1,75 +1,162 @@
 /* ============ DATA ============ */
 const sections = [
   { id:"gen0", label:"Gen 0", accent:"#38bdf8", flag:"🇯🇵", members:[
-    ["Tokino Sora"],["Robocosan"],["AZKi"],["Sakura Miko"],["Hoshimachi Suisei"]
+    { name:"Tokino Sora", bio:"&ldquo;Hey, Sora-tomo! How are you all doing? It's me, Tokino Sora!&rdquo;<br><br>hololive Production's first virtual idol, debuting on September 7, 2017. She loves horror games and singing, and has always dreamed of performing in Yokohama Arena.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCp6993wxpyDPHUpavwDFqgg" },
+      { platform:"twitter", url:"https://x.com/tokino_sora" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/tokino-sora/" },
+    ] },
+    { name:"Robocosan", bio:"", photos:[], socials:[] },
+    { name:"AZKi", bio:"", photos:[], socials:[] },
+    { name:"Sakura Miko", bio:"", photos:[], socials:[] },
+    { name:"Hoshimachi Suisei", bio:"", photos:[], socials:[] },
   ]},
   { id:"gen1", label:"Gen 1", accent:"#f59e0b", flag:"🇯🇵", members:[
-    ["Aki Rosenthal"],["Akai Haato"],["Shirakami Fubuki"],["Natsuiro Matsuri"]
+    { name:"Aki Rosenthal", bio:"", photos:[], socials:[] },
+    { name:"Akai Haato", bio:"", photos:[], socials:[] },
+    { name:"Shirakami Fubuki", bio:"", photos:[], socials:[] },
+    { name:"Natsuiro Matsuri", bio:"", photos:[], socials:[] },
   ]},
   { id:"gen2", label:"Gen 2", accent:"#ec4899", flag:"🇯🇵", members:[
-    ["Nakiri Ayame"],["Yuzuki Choco"],["Oozora Subaru"],["Minato Aqua","alum"],["Murasaki Shion","alum"]
+    { name:"Nakiri Ayame", bio:"", photos:[], socials:[] },
+    { name:"Yuzuki Choco", bio:"", photos:[], socials:[] },
+    { name:"Oozora Subaru", bio:"", photos:[], socials:[] },
+    { name:"Minato Aqua", status:"alum", bio:"", photos:[], socials:[] },
+    { name:"Murasaki Shion", status:"alum", bio:"", photos:[], socials:[] },
   ]},
   { id:"gamers", label:"GAMERS", accent:"#10b981", flag:"🇯🇵", members:[
-    ["Shirakami Fubuki"],["Ookami Mio"],["Nekomata Okayu"],["Inugami Korone"]
+    { name:"Shirakami Fubuki", bio:"", photos:[], socials:[] },
+    { name:"Ookami Mio", bio:"", photos:[], socials:[] },
+    { name:"Nekomata Okayu", bio:"", photos:[], socials:[] },
+    { name:"Inugami Korone", bio:"", photos:[], socials:[] },
   ]},
   { id:"gen3", label:"Gen 3", accent:"#ef4444", flag:"🇯🇵", members:[
-    ["Usada Pekora"],["Shiranui Flare"],["Shirogane Noel"],["Houshou Marine"]
+    { name:"Usada Pekora", bio:"", photos:[], socials:[] },
+    { name:"Shiranui Flare", bio:"", photos:[], socials:[] },
+    { name:"Shirogane Noel", bio:"", photos:[], socials:[] },
+    { name:"Houshou Marine", bio:"", photos:[], socials:[] },
   ]},
   { id:"gen4", label:"Gen 4", accent:"#8b5cf6", flag:"🇯🇵", members:[
-    ["Tsunomaki Watame"],["Tokoyami Towa"],["Himemori Luna"],["Amane Kanata","alum"],["Kiryu Coco","alum"]
+    { name:"Tsunomaki Watame", bio:"", photos:[], socials:[] },
+    { name:"Tokoyami Towa", bio:"", photos:[], socials:[] },
+    { name:"Himemori Luna", bio:"", photos:[], socials:[] },
+    { name:"Amane Kanata", status:"alum", bio:"", photos:[], socials:[] },
+    { name:"Kiryu Coco", status:"alum", bio:"", photos:[], socials:[] },
   ]},
   { id:"gen5", label:"Gen 5", accent:"#0ea5e9", flag:"🇯🇵", members:[
-    ["Yukihana Lamy"],["Momosuzu Nene"],["Shishiro Botan"],["Omaru Polka"]
+    { name:"Yukihana Lamy", bio:"", photos:[], socials:[] },
+    { name:"Momosuzu Nene", bio:"", photos:[], socials:[] },
+    { name:"Shishiro Botan", bio:"", photos:[], socials:[] },
+    { name:"Omaru Polka", bio:"", photos:[], socials:[] },
   ]},
   { id:"holox", label:"holoX", accent:"#a855f7", flag:"🇯🇵", members:[
-    ["La+ Darknesss"],["Takane Lui"],["Hakui Koyori"],["Kazama Iroha"],["Sakamata Chloe","affiliate"]
+    { name:"La+ Darknesss", bio:"", photos:[], socials:[] },
+    { name:"Takane Lui", bio:"", photos:[], socials:[] },
+    { name:"Hakui Koyori", bio:"", photos:[], socials:[] },
+    { name:"Kazama Iroha", bio:"", photos:[], socials:[] },
+    { name:"Sakamata Chloe", status:"affiliate", bio:"", photos:[], socials:[] },
   ]},
   { id:"area15", label:"AREA15", accent:"#f97316", flag:"🇮🇩", members:[
-    ["Ayunda Risu"],["Moona Hoshinova"],["Airani Iofifteen"]
+    { name:"Ayunda Risu", bio:"", photos:[], socials:[] },
+    { name:"Moona Hoshinova", bio:"", photos:[], socials:[] },
+    { name:"Airani Iofifteen", bio:"", photos:[], socials:[] },
   ]},
   { id:"holoro", label:"HOLORO", accent:"#fb923c", flag:"🇮🇩", members:[
-    ["Kureiji Ollie"],["Anya Melfissa"],["Pavolia Reine"]
+    { name:"Kureiji Ollie", bio:"", photos:[], socials:[] },
+    { name:"Anya Melfissa", bio:"", photos:[], socials:[] },
+    { name:"Pavolia Reine", bio:"", photos:[], socials:[] },
   ]},
   { id:"holoh3ro", label:"holoH3RO", accent:"#ea580c", flag:"🇮🇩", members:[
-    ["Vestia Zeta"],["Kaela Kovalskia"],["Kobo Kanaeru"]
+    { name:"Vestia Zeta", bio:"", photos:[], socials:[] },
+    { name:"Kaela Kovalskia", bio:"", photos:[], socials:[] },
+    { name:"Kobo Kanaeru", bio:"", photos:[], socials:[] },
   ]},
   { id:"myth", label:"Myth", accent:"#dc2626", flag:"🌐", members:[
-    ["Mori Calliope"],["Takanashi Kiara"],["Ninomae Ina'nis"],["Watson Amelia","affiliate"],["Gawr Gura","alum"]
+    { name:"Mori Calliope", bio:"", photos:[], socials:[] },
+    { name:"Takanashi Kiara", bio:"", photos:[], socials:[] },
+    { name:"Ninomae Ina'nis", bio:"", photos:[], socials:[] },
+    { name:"Watson Amelia", status:"affiliate", bio:"", photos:[], socials:[] },
+    { name:"Gawr Gura", status:"alum", bio:"", photos:[], socials:[] },
   ]},
   { id:"hope", label:"Project: HOPE", accent:"#eab308", flag:"🌐", members:[
-    ["IRyS"]
+    { name:"IRyS", bio:"", photos:[], socials:[] },
   ]},
   { id:"council", label:"Council", accent:"#3b82f6", flag:"🌐", members:[
-    ["Ouro Kronii"],["Hakos Baelz"],["Tsukumo Sana","alum"],["Ceres Fauna","alum"],["Nanashi Mumei","alum"]
+    { name:"Ouro Kronii", bio:"", photos:[], socials:[] },
+    { name:"Hakos Baelz", bio:"", photos:[], socials:[] },
+    { name:"Tsukumo Sana", status:"alum", bio:"", photos:[], socials:[] },
+    { name:"Ceres Fauna", status:"alum", bio:"", photos:[], socials:[] },
+    { name:"Nanashi Mumei", status:"alum", bio:"", photos:[], socials:[] },
   ]},
   { id:"advent", label:"Advent", accent:"#c026d3", flag:"🌐", members:[
-    ["Shiori Novella"],["Koseki Bijou"],["Nerissa Ravencroft"],["Fuwawa Abyssgard"],["Mococo Abyssgard"]
+    { name:"Shiori Novella", bio:"", photos:[], socials:[] },
+    { name:"Koseki Bijou", bio:"", photos:[], socials:[] },
+    { name:"Nerissa Ravencroft", bio:"", photos:[], socials:[] },
+    { name:"Fuwawa Abyssgard", bio:"", photos:[], socials:[] },
+    { name:"Mococo Abyssgard", bio:"", photos:[], socials:[] },
   ]},
   { id:"justice", label:"Justice", accent:"#06b6d4", flag:"🌐", members:[
-    ["Elizabeth Rose Bloodflame"],["Gigi Murin"],["Cecilia Immergreen"],["Raora Panthera"]
+    { name:"Elizabeth Rose Bloodflame", bio:"", photos:[], socials:[] },
+    { name:"Gigi Murin", bio:"", photos:[], socials:[] },
+    { name:"Cecilia Immergreen", bio:"", photos:[], socials:[] },
+    { name:"Raora Panthera", bio:"", photos:[], socials:[] },
   ]},
   { id:"regloss", label:"ReGLOSS", accent:"#f43f5e", flag:"🇯🇵", members:[
-    ["Otonose Kanade"],["Ichijou Ririka"],["Juufuutei Raden"],["Todoroki Hajime"],["Hiodoshi Ao","alum"]
+    { name:"Otonose Kanade", bio:"", photos:[], socials:[] },
+    { name:"Ichijou Ririka", bio:"", photos:[], socials:[] },
+    { name:"Juufuutei Raden", bio:"", photos:[], socials:[] },
+    { name:"Todoroki Hajime", bio:"", photos:[], socials:[] },
+    { name:"Hiodoshi Ao", status:"alum", bio:"", photos:[], socials:[] },
   ]},
   { id:"flowglow", label:"FLOW GLOW", accent:"#65a30d", flag:"🇯🇵", members:[
-    ["Isaki Riona"],["Koganei Niko"],["Mizumiya Su"],["Rindo Chihaya"],["Kikirara Vivi"]
+    { name:"Isaki Riona", bio:"", photos:[], socials:[] },
+    { name:"Koganei Niko", bio:"", photos:[], socials:[] },
+    { name:"Mizumiya Su", bio:"", photos:[], socials:[] },
+    { name:"Rindo Chihaya", bio:"", photos:[], socials:[] },
+    { name:"Kikirara Vivi", bio:"", photos:[], socials:[] },
   ]},
 ];
 
 const STATUS_LABEL = { alum:"Alum", affiliate:"Affiliate" };
 
-/* Flatten into one ordered list so the popup can cycle through everyone */
+/* Generic, non-trademarked icons + a color per platform — a plain
+   play triangle, a plain X, and a sparkle for the hololive page link.
+   (Not using the real YouTube/X/hololive logos on purpose — those are
+   trademarked and not mine to embed.) */
+const SOCIAL_META = {
+  youtube: {
+    label:"YouTube",
+    color:"#ef4444",
+    icon:`<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`
+  },
+  twitter: {
+    label:"X",
+    color:"#111827",
+    icon:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>`
+  },
+  hololive: {
+    label:"hololive page",
+    color:"#38bdf8",
+    icon:`<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.8L22 10l-6 4.6L17.6 22 12 17.8 6.4 22 8 14.6 2 10l7.6-1.2z"/></svg>`
+  }
+};
+
+/* Flatten into one ordered list so the popup can cycle through everyone.
+   This just copies each member's fields through — it does NOT invent
+   any text. If bio/photos/socials are empty, that's carried through as
+   empty, and the render functions below decide what placeholder to show. */
 const members = [];
 sections.forEach(section=>{
-  section.members.forEach(([name, status])=>{
+  section.members.forEach(member=>{
     members.push({
-      name,
-      status: status || null,
+      name: member.name,
+      status: member.status || null,
+      bio: member.bio || "",
+      photos: member.photos || [],
+      socials: member.socials || [],
       tag: section.label,
       accent: section.accent,
       flag: section.flag,
-      desc: `Add ${name}'s bio here.`,
-      photos: 3
     });
   });
 });
@@ -148,15 +235,18 @@ sections.forEach(section=>{
   const grid = document.createElement('div');
   grid.className = 'grid';
 
-  section.members.forEach(([name, status])=>{
+  section.members.forEach(member=>{
     const i = flatIndex++;
     const card = document.createElement('button');
     card.className = 'card';
     card.style.setProperty('--card-accent', section.accent);
-    const statusBit = status ? ` · ${STATUS_LABEL[status]}` : '';
+    const statusBit = member.status ? ` · ${STATUS_LABEL[member.status]}` : '';
+    const photoMarkup = member.photos[0]
+      ? `<img src="${member.photos[0]}" alt="${member.name}">`
+      : personIcon;
     card.innerHTML = `
-      <div class="card-photo">${personIcon}</div>
-      <div class="card-name">${name}</div>
+      <div class="card-photo">${photoMarkup}</div>
+      <div class="card-name">${member.name}</div>
       <div class="card-tag"><span class="card-dot">${section.flag}</span>${section.label}${statusBit}</div>
     `;
     card.addEventListener('click', ()=> openModal(i));
@@ -173,7 +263,8 @@ const panel = document.getElementById('panel');
 const panelTag = document.getElementById('panelTag');
 const panelName = document.getElementById('panelName');
 const panelDesc = document.getElementById('panelDesc');
-const mediaLabel = document.getElementById('mediaLabel');
+const panelSocials = document.getElementById('panelSocials');
+const fullbodyPlaceholder = document.getElementById('fullbodyPlaceholder');
 const thumbRow = document.getElementById('thumbRow');
 const closeBtn = document.getElementById('closeBtn');
 
@@ -182,14 +273,53 @@ function renderPanel(index, photoIndex){
   panel.style.setProperty('--card-accent', m.accent);
   panelTag.textContent = m.status ? `${m.tag} · ${STATUS_LABEL[m.status]}` : m.tag;
   panelName.textContent = m.name;
-  panelDesc.innerHTML = m.desc + `<span class="placeholder-note">Placeholder text &mdash; swap in the real bio.</span>`;
-  mediaLabel.textContent = `Full body image ${photoIndex+1} of ${m.photos} goes here`;
+
+  /* Bio: use the real bio if this member has one, otherwise a
+     placeholder note so it's obvious it's still unwritten. */
+  panelDesc.innerHTML = m.bio
+    ? m.bio
+    : `Add ${m.name}'s bio here.<span class="placeholder-note">Placeholder text &mdash; swap in the real bio.</span>`;
+
+  /* Socials: one badge per entry in m.socials, using SOCIAL_META for
+     the icon/color. No badges at all if the member has none set. */
+  panelSocials.innerHTML = '';
+  m.socials.forEach(social=>{
+    const meta = SOCIAL_META[social.platform];
+    if(!meta) return;
+    const badge = document.createElement('a');
+    badge.className = 'social-badge';
+    badge.href = social.url;
+    badge.target = '_blank';
+    badge.rel = 'noopener noreferrer';
+    badge.title = meta.label;
+    badge.style.setProperty('--badge-accent', meta.color);
+    badge.innerHTML = meta.icon;
+    panelSocials.appendChild(badge);
+  });
+
+  /* Photo: use the real image if this member has one at this index,
+     otherwise fall back to the dashed placeholder box. */
+  const photoPath = m.photos[photoIndex];
+  if(photoPath){
+    fullbodyPlaceholder.innerHTML = `<img src="${photoPath}" alt="${m.name}" style="width:100%; height:100%; object-fit:contain;">`;
+  } else {
+    const totalSlots = m.photos.length || 1;
+    fullbodyPlaceholder.innerHTML = `
+      ${personIcon}
+      <span id="mediaLabel">Full body image ${photoIndex+1} of ${totalSlots} goes here</span>
+    `;
+  }
 
   thumbRow.innerHTML = '';
-  for(let p=0; p<m.photos; p++){
+  const totalSlots = m.photos.length || 3;
+  for(let p=0; p<totalSlots; p++){
     const t = document.createElement('div');
     t.className = 'thumb' + (p===photoIndex ? ' active' : '');
-    t.textContent = p+1;
+    if(m.photos[p]){
+      t.innerHTML = `<img src="${m.photos[p]}" alt="" style="width:100%; height:100%; object-fit:cover; border-radius:7px;">`;
+    } else {
+      t.textContent = p+1;
+    }
     t.addEventListener('click', ()=> setPhoto(p));
     thumbRow.appendChild(t);
   }
@@ -259,14 +389,3 @@ document.addEventListener('mousemove', (e)=>{
 
 prevArrow.addEventListener('click', ()=> changeMember('prev'));
 nextArrow.addEventListener('click', ()=> changeMember('next'));
-
-/* ============ BACK TO TOP ============ */
-const backToTop = document.getElementById('backToTop');
-
-window.addEventListener('scroll', ()=>{
-  backToTop.classList.toggle('visible', window.scrollY > 400);
-});
-
-backToTop.addEventListener('click', ()=>{
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
