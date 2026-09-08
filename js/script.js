@@ -1,6 +1,4 @@
 /* ============ DATA ============ */
-/* Flat list of generations/units — no branch grouping, per the latest restructure.
-   Each member: [name, status?]  status: "alum" | "affiliate" (omit for active members) */
 const sections = [
   { id:"gen0", label:"Gen 0", accent:"#38bdf8", members:[
     ["Tokino Sora"],["Robocosan"],["AZKi"],["Sakura Miko"],["Hoshimachi Suisei"]
@@ -33,11 +31,8 @@ const sections = [
   { id:"myth", label:"Myth", accent:"#dc2626", members:[
     ["Mori Calliope"],["Takanashi Kiara"],["Ninomae Ina'nis"],["Watson Amelia","affiliate"],["Gawr Gura","alum"]
   ]},
-  { id:"hope", label:"Project: HOPE", accent:"#eab308", members:[
-    ["IRyS"]
-  ]},
   { id:"council", label:"Council", accent:"#3b82f6", members:[
-    ["Ouro Kronii"],["Hakos Baelz"],["Tsukumo Sana","alum"],["Ceres Fauna","alum"],["Nanashi Mumei","alum"]
+    ["Ouro Kronii"],["Hakos Baelz"],["IRyS"]
   ]},
   { id:"advent", label:"Advent", accent:"#c026d3", members:[
     ["Shiori Novella"],["Koseki Bijou"],["Nerissa Ravencroft"],["Fuwawa Abyssgard"],["Mococo Abyssgard"]
