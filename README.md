@@ -1,38 +1,24 @@
-# favourite-holomem
+# My Favourite Hololive Members
 
-A little fan page for showcasing my favourite Hololive talents. Click on a member's box and a profile popup opens up with their full body art, name, and a bio. Background's got a blue gradient with some glowing dots drifting in and out, and there's a slideshow-style arrow nav so you can flip between members without closing the popup.
+A fan page covering every hololive generation and unit. no branch grouping anymore (Gen 0 through holoX, Indonesia, Myth through Justice, ReGLOSS, FLOW GLOW), since hololive itself has moved away from splitting talent into separate branches. Nav is a floating glass capsule pinned to the top center of the screen. It stays put while you scroll, and each pill jumps you straight to that section. Click any member's box and a profile popup opens with their full body art, name, and a bio. Background is a soft white field with big blurred blue circles drifting around slowly, and there's a slideshow-style arrow nav so you can flip between every member without closing the popup. A glass "back to top" button appears bottom-right once you've scrolled down a bit.
 
-Built with plain HTML, CSS, and JS. no frameworks, no build step, nothing to install.
+Built with plain HTML, CSS, and JS. No frameworks, no build step, nothing to install.
 
 ## What's in here
 
 - `index.html` – the page structure
-- `style.css` – all the styling (gradient background, glass cards, modal, animations)
-- `script.js` – the member data and all the interactive bits (opening/closing the modal, cycling between members, switching photos)
+- `style.css` – all the styling (blob background, glass nav/cards/modal, animations)
+- `script.js` – the member data and all the interactive bits (nav pills, modal, cycling between members, back-to-top)
 
 ## Running it
 
 Just open `index.html` in a browser. That's it. If you want live-reload while editing, any local server works fine too (e.g. VS Code's Live Server extension, or `python3 -m http.server`).
 
-## Adding your own images
-
-Right now every photo slot is an empty dashed box on purpose — I didn't include any actual character art. To drop own images in:
-
-1. Put image files somewhere in the project folder (an `images/` folder is a good idea).
-2. In `script.js`, find the member to update.
-3. In the grid card and modal markup (in `index.html`/rendered via `script.js`), swap the placeholder `<div class="card-photo">` or `<div class="fullbody-placeholder">` contents for an `<img src="images/whoever.png" alt="...">`.
-
-Each member already has 3 photo slots wired up in the popup gallery (the little numbered thumbnails under the main image) — just point each one at a different file if multiple pics.
-
-## Customizing
-
-- **Member list / bios / colors**: all in the `members` array at the top of `script.js`. Each member has their own `accent` color that tints their card glow and popup theme, so tweak those however.
-- **Number of background dots**: `DOT_COUNT` near the top of `script.js`.
-- **Colors / fonts / spacing**: `:root` variables at the top of `style.css`.
+Each member already has 3 photo slots wired up in the popup gallery (the little numbered thumbnails under the main image).
 
 ## Browser support
 
-Uses `backdrop-filter` for the blur effect, which is supported in all modern browsers (Chrome, Edge, Firefox, Safari). Older browsers will still work, just without the blur.
+Uses `backdrop-filter` for the glass effect, which is supported in all modern browsers (Chrome, Edge, Firefox, Safari). Older browsers will still work, just without the blur — the nav and cards will look like plain translucent panels instead.
 
 ## License
 
