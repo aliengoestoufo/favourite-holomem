@@ -7,22 +7,30 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="dot-field"></div>
+<div id="blob-field"></div>
+
+<nav class="pill-nav">
+  <div class="pill-nav-inner" id="navPills"></div>
+</nav>
 
 <header>
-  <h1>My Favourite Hololive Members</h1>
-  <p>A little shrine for the talents I keep coming back to. Tap anyone to open their profile.</p>
+  <h1>Hololive Members</h1>
+  <p>Every generation and unit, all in one place. Use the nav above to jump around, or click any card to open a profile.</p>
 </header>
 
 <main>
-  <div class="grid" id="grid"></div>
+  <div id="content"></div>
 </main>
 
-<footer>Made with love for oshi everywhere · AliengoestoUFO </footer>
+<footer>Made with love for oshi everywhere · replace the dashed boxes with your own images</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+</button>
 
 <div class="nav-zone left" id="zoneLeft">
   <button class="nav-arrow" id="prevArrow" aria-label="Previous member">
@@ -36,7 +44,7 @@
 </div>
 
 <div class="backdrop" id="backdrop">
-  <div class="panel" id="panel" style="--card-accent:#5eead4;">
+  <div class="panel" id="panel" style="--card-accent:#0ea5a4;">
     <button class="close-btn" id="closeBtn" aria-label="Close">
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
     </button>
@@ -55,10 +63,6 @@
   </div>
 </div>
 
-  <script src="js/script.js"></script>
-
-</body>
-</html>
 <script src="script.js"></script>
 
 </body>
