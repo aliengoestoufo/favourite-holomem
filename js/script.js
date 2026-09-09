@@ -1,163 +1,195 @@
 /* ============ DATA ============ */
 const sections = [
   { id:"gen0", label:"Gen 0", accent:"#38bdf8", flag:"🇯🇵", members:[
-    { name:"Tokino Sora", accent:"#38bdf8", bio:"&ldquo;Hey, Sora-tomo! How are you all doing? It's me, Tokino Sora!&rdquo;<br><br>hololive Production's first virtual idol, debuting on September 7, 2017. She loves horror games and singing, and has always dreamed of performing in Yokohama Arena.", photos:[], socials:[
+    { name:"Tokino Sora", accent:"#1565c0", bio:"&ldquo;Hey, Sora-tomo! How are you all doing? It's me, Tokino Sora!&rdquo;<br><br>hololive Production's first virtual idol, debuting on September 7, 2017. She loves horror games and singing, and has always dreamed of performing in Yokohama Arena.<br><br>She signed a record deal with Victor Entertainment in March 2019. She is active in various forms of media, such as appearing in Watanuki-san Chi no and hosting Sora Ao to!, a radio show.<br><br>She held her first solo concert, Dream!, on October 6, 2019, taking one step closer to her ultimate goal.", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UCp6993wxpyDPHUpavwDFqgg" },
       { platform:"twitter", url:"https://x.com/tokino_sora" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/tokino-sora/" },
     ] },
-    { name:"Robocosan", accent:"#f87171", bio:"&ldquo;Hellobo! Roboco here!&rdquo;<br><br>Hellobo! It's me, the high-spec hololive VTuber Roboco! I showed up from a faraway wasteland having lost all my memories. I believe I'm pretty high-spec, but some rumors say that it'd be more accurate to call me &ldquo;broken&rdquo;... lol. I'm a gamer gal whose defining trait is a very human, emotional singing voice!", photos:[], socials:[
+    { name:"Robocosan", accent:"#a888b8", bio:"&ldquo;Hellobo! Roboco here!&rdquo;<br><br>Hellobo! It's me, the high-spec hololive VTuber Roboco! I showed up from a faraway wasteland having lost all my memories. I believe I'm pretty high-spec, but some rumors say that it'd be more accurate to call me &ldquo;broken&rdquo;... lol. I'm a gamer gal whose defining trait is a very human, emotional singing voice!", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UCDqI2jOz0weumE8s7paEk6g" },
       { platform:"twitter", url:"https://twitter.com/robocosan" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/roboco-san/" },
     ] },
-    { name:"AZKi", accent:"#d946ef", bio:"", photos:[], socials:[
+    { name:"AZKi", accent:"#c2bcae", bio:"", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UC0TXe_LYZ4scaW2XMyi5_kw" },
       { platform:"twitter", url:"https://twitter.com/AZKi_VDiVA" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/azki/" },
     ] },
-    { name:"Sakura Miko", accent:"#ec4899", bio:"", photos:[], socials:[
+    { name:"Sakura Miko", accent:"#ff77ab", bio:"", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UC-hM6YJuNYVAmUWxeIr9FeA" },
       { platform:"twitter", url:"https://twitter.com/sakuramiko35" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/sakuramiko/" },
     ] },
-    { name:"Hoshimachi Suisei", accent:"#22d3ee", bio:"", photos:[], socials:[
+    { name:"Hoshimachi Suisei", accent:"#33c6e0", bio:"", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A" },
       { platform:"twitter", url:"https://twitter.com/suisei_hosimati" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/hoshimachi-suisei/" },
     ] },
   ]},
   { id:"gen1", label:"Gen 1", accent:"#f59e0b", flag:"🇯🇵", members:[
-    { name:"Aki Rosenthal", accent:"#eab308", bio:"", photos:[], socials:[
+    { name:"Aki Rosenthal", accent:"#ff3d94", bio:"", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UCFTLzh12_nrtzqBPsTCqenA" },
       { platform:"twitter", url:"https://twitter.com/akirosenthal" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/aki-rosenthal/" },
     ] },
-    { name:"Akai Haato", accent:"#dc2626", bio:"", photos:[], socials:[
+    { name:"Akai Haato", accent:"#e6323c", bio:"", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UC1CfXB_kRs3C-zaeTG3oGyg" },
       { platform:"twitter", url:"https://twitter.com/akaihaato" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/akai-haato/" },
     ] },
-    { name:"Shirakami Fubuki", accent:"#94a3b8", bio:"", photos:[], socials:[
+    { name:"Shirakami Fubuki", accent:"#4fc3e8", bio:"", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UCdn5BQ06XqgXoAxIhbqw5Rg" },
       { platform:"twitter", url:"https://twitter.com/shirakamifubuki" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/shirakami-fubuki/" },
     ] },
-    { name:"Natsuiro Matsuri", accent:"#f97316", bio:"", photos:[], socials:[
+    { name:"Natsuiro Matsuri", accent:"#ff9d1f", bio:"", photos:[], socials:[
       { platform:"youtube", url:"https://youtube.com/channel/UCQ0UDLQCjY0rmuxCDE38FGg" },
       { platform:"twitter", url:"https://twitter.com/natsuiromatsuri" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/natsuiro-matsuri/" },
     ] },
   ]},
   { id:"gen2", label:"Gen 2", accent:"#ec4899", flag:"🇯🇵", members:[
-    { name:"Nakiri Ayame", accent:"#b91c1c", bio:"&ldquo;Greetings, Humans! Yoohoo!&rdquo;<br><br>A kimono-clad Oni girl from the Underworld Academy. As she loves to prank people, she always uses will-o'-the-wisp on them just to have fun. Many may not realize it, but she is actually the president of the student council.", photos:[], socials:[
+    { name:"Nakiri Ayame", accent:"#e13a4a", bio:"&ldquo;Greetings, Humans! Yoohoo!&rdquo;<br><br>A kimono-clad Oni girl from the Underworld Academy. As she loves to prank people, she always uses will-o'-the-wisp on them just to have fun. Many may not realize it, but she is actually the president of the student council.", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UC7fk0CB07ly8oSl0aqKkqFg" },
       { platform:"twitter", url:"https://twitter.com/nakiriayame" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/nakiri-ayame/" },
     ] },
-    { name:"Yuzuki Choco", accent:"#b45309", bio:"&ldquo;Good evening, my cute students! Choc-on!&rdquo;<br><br>The school nurse at the Underworld Academy. Is incredibly popular among the students, with the boys in particular coming to get checked up all the time. Loves sweets, and often gets into trouble for leaving them strewn about on her desk.", photos:[], socials:[
+    { name:"Yuzuki Choco", accent:"#ff5c9d", bio:"&ldquo;Good evening, my cute students! Choc-on!&rdquo;<br><br>The school nurse at the Underworld Academy. Is incredibly popular among the students, with the boys in particular coming to get checked up all the time. Loves sweets, and often gets into trouble for leaving them strewn about on her desk.", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UC1suqwovbL1kzsoaZgFZLKg" },
       { platform:"twitter", url:"https://twitter.com/yuzukichococh" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/yuzuki-choco/" },
     ] },
-    { name:"Oozora Subaru", accent:"#92400e", bio:"&ldquo;Sup! I'm Oozora Subaru from hololive 2nd Generation!&rdquo;<br><br>The manager of an MMA team and an e-sports club. A bright and cheerful girl full of spirit, she can interact with anyone and everyone without hesitation. She's currently working hard on her own pro-gamer skills.", photos:[], socials:[
+    { name:"Oozora Subaru", accent:"#c3d825", bio:"&ldquo;Sup! I'm Oozora Subaru from hololive 2nd Generation!&rdquo;<br><br>The manager of an MMA team and an e-sports club. A bright and cheerful girl full of spirit, she can interact with anyone and everyone without hesitation. She's currently working hard on her own pro-gamer skills.", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UCvzGlP9oQwU--Y0r9id_jnA" },
       { platform:"twitter", url:"https://twitter.com/oozorasubaru" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/oozora-subaru/" },
     ] },
-    { name:"Minato Aqua", status:"alum", accent:"#f472b6", bio:"", photos:[], socials:[] },
-    { name:"Murasaki Shion", status:"alum", accent:"#9333ea", bio:"", photos:[], socials:[] },
+    { name:"Minato Aqua", status:"alum", accent:"#ff8fc0", bio:"", photos:[], socials:[] },
+    { name:"Murasaki Shion", status:"alum", accent:"#8a4fc4", bio:"", photos:[], socials:[] },
   ]},
   { id:"gamers", label:"GAMERS", accent:"#10b981", flag:"🇯🇵", members:[
-    { name:"Shirakami Fubuki", bio:"", photos:[], socials:[] },
-    { name:"Ookami Mio", bio:"", photos:[], socials:[] },
-    { name:"Nekomata Okayu", bio:"", photos:[], socials:[] },
-    { name:"Inugami Korone", bio:"", photos:[], socials:[] },
+    { name:"Shirakami Fubuki", accent:"#4fc3e8", bio:"", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCdn5BQ06XqgXoAxIhbqw5Rg" },
+      { platform:"twitter", url:"https://twitter.com/shirakamifubuki" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/shirakami-fubuki/" },
+    ] },
+    { name:"Ookami Mio", accent:"#dd4b39", bio:"&ldquo;Hellooowl! It is Ookami Mio!&rdquo;<br><br>A black-haired wolf girl who appeared on our radar randomly. She often shows up around shrines. She likes gaming.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCp-5t9SrOQwXMU7iIjQfARg" },
+      { platform:"twitter", url:"https://twitter.com/ookamimio" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/ookami-mio/" },
+    ] },
+    { name:"Nekomata Okayu", accent:"#9b6fc4", bio:"&ldquo;Nom nom Okayu~!&rdquo;<br><br>A cat being raised by an old woman that runs an onigiri store. She streams from the computer in her grandma's room.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCvaTdHTWBGv3MKj3KVqJVCw" },
+      { platform:"twitter", url:"https://twitter.com/nekomataokayu" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/nekomata-okayu/" },
+    ] },
+    { name:"Inugami Korone", accent:"#e0b02a", bio:"&ldquo;Ello! Fingers! Give me your fingers!&rdquo;<br><br>A dog from a bakery in the city. She likes to play games during her free time while watchdogging.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q" },
+      { platform:"twitter", url:"https://twitter.com/inugamikorone" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/inugami-korone/" },
+    ] },
   ]},
   { id:"gen3", label:"Gen 3", accent:"#ef4444", flag:"🇯🇵", members:[
-    { name:"Usada Pekora", bio:"", photos:[], socials:[] },
-    { name:"Shiranui Flare", bio:"", photos:[], socials:[] },
-    { name:"Shirogane Noel", bio:"", photos:[], socials:[] },
-    { name:"Houshou Marine", bio:"", photos:[], socials:[] },
+    { name:"Usada Pekora", accent:"#8ecae6", bio:"&ldquo;Hiya-peko! Hiya-peko! Hiya-pekooo! I'm Usada Pekora, peko!&rdquo;<br><br>A lonely rabbit-eared girl who loves carrots. She loves them so much that she always brings a few anywhere she goes.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ" },
+      { platform:"twitter", url:"https://twitter.com/usadapekora" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/usada-pekora/" },
+    ] },
+    { name:"Shiranui Flare", accent:"#e8442e", bio:"&ldquo;Noon-nui! This is hololive 3rd Gen's Shiranui Flare!&rdquo;<br><br>A half-elf born to a human and elf. Usually enjoys life as she pleases. Wants to be a source of comfort so rely on her whenever you're in trouble. She may be passionate and overly sentimental, but praising her will bring her joy, even if also a little embarrassment! &ldquo;Hehehe! Let's get along!&rdquo;", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCvInZx9h3jC2JzsIzoOebWg" },
+      { platform:"twitter", url:"https://twitter.com/shiranuiflare" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/shiranui-flare/" },
+    ] },
+    { name:"Shirogane Noel", accent:"#9c9c9c", bio:"&ldquo;All hustle, all muscle! Shirogane Noel's here!&rdquo;<br><br>As much as this fluffy, meatheaded knight may be easy-going, she has the dangerous habit of attempting to muscle her way through her problems. Hungering for power, she came to train to the VTuber world where all the stronk people are.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCdyqAaZDKHXg4Ahi7VENThQ" },
+      { platform:"twitter", url:"https://twitter.com/shiroganenoel" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/shirogane-noel/" },
+    ] },
+    { name:"Houshou Marine", accent:"#8e1f2e", bio:"&ldquo;Ahoy! Captain of the Houshou Pirates, Houshou Marine here! Keep 'er steady!&rdquo;<br><br>Loves jewels, treasure, and money. Her dream is to become a pirate and go treasure hunting. In order to get a pirate ship, she is now stacking up money as a VTuber on the great lands, just like how the other land-lovers do.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg" },
+      { platform:"twitter", url:"https://twitter.com/houshoumarine" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/houshou-marine/" },
+    ] },
   ]},
   { id:"gen4", label:"Gen 4", accent:"#8b5cf6", flag:"🇯🇵", members:[
-    { name:"Tsunomaki Watame", bio:"", photos:[], socials:[] },
-    { name:"Tokoyami Towa", bio:"", photos:[], socials:[] },
-    { name:"Himemori Luna", bio:"", photos:[], socials:[] },
-    { name:"Amane Kanata", status:"alum", bio:"", photos:[], socials:[] },
-    { name:"Kiryu Coco", status:"alum", bio:"", photos:[], socials:[] },
+    { name:"Tsunomaki Watame", accent:"#eec213", bio:"", photos:[], socials:[] },
+    { name:"Tokoyami Towa", accent:"#8bc4e8", bio:"", photos:[], socials:[] },
+    { name:"Himemori Luna", accent:"#ff70a6", bio:"", photos:[], socials:[] },
+    { name:"Amane Kanata", status:"alum", accent:"#5fc4e8", bio:"", photos:[], socials:[] },
+    { name:"Kiryu Coco", status:"alum", accent:"#ff9f3a", bio:"", photos:[], socials:[] },
   ]},
   { id:"gen5", label:"Gen 5", accent:"#0ea5e9", flag:"🇯🇵", members:[
-    { name:"Yukihana Lamy", bio:"", photos:[], socials:[] },
-    { name:"Momosuzu Nene", bio:"", photos:[], socials:[] },
-    { name:"Shishiro Botan", bio:"", photos:[], socials:[] },
-    { name:"Omaru Polka", bio:"", photos:[], socials:[] },
+    { name:"Yukihana Lamy", accent:"#5fc2e0", bio:"", photos:[], socials:[] },
+    { name:"Momosuzu Nene", accent:"#ff9f40", bio:"", photos:[], socials:[] },
+    { name:"Shishiro Botan", accent:"#4fc4ad", bio:"", photos:[], socials:[] },
+    { name:"Omaru Polka", accent:"#e0343f", bio:"", photos:[], socials:[] },
   ]},
   { id:"holox", label:"holoX", accent:"#a855f7", flag:"🇯🇵", members:[
-    { name:"La+ Darknesss", bio:"", photos:[], socials:[] },
-    { name:"Takane Lui", bio:"", photos:[], socials:[] },
-    { name:"Hakui Koyori", bio:"", photos:[], socials:[] },
-    { name:"Kazama Iroha", bio:"", photos:[], socials:[] },
-    { name:"Sakamata Chloe", status:"affiliate", bio:"", photos:[], socials:[] },
+    { name:"La+ Darknesss", accent:"#4b2e82", bio:"", photos:[], socials:[] },
+    { name:"Takane Lui", accent:"#5e2030", bio:"", photos:[], socials:[] },
+    { name:"Hakui Koyori", accent:"#ff5aa0", bio:"", photos:[], socials:[] },
+    { name:"Kazama Iroha", accent:"#33b8a8", bio:"", photos:[], socials:[] },
+    { name:"Sakamata Chloe", status:"affiliate", accent:"#6fd4c0", bio:"", photos:[], socials:[] },
   ]},
   { id:"area15", label:"AREA15", accent:"#f97316", flag:"🇮🇩", members:[
-    { name:"Ayunda Risu", bio:"", photos:[], socials:[] },
-    { name:"Moona Hoshinova", bio:"", photos:[], socials:[] },
-    { name:"Airani Iofifteen", bio:"", photos:[], socials:[] },
+    { name:"Ayunda Risu", accent:"#ffa0c4", bio:"", photos:[], socials:[] },
+    { name:"Moona Hoshinova", accent:"#8a6bc9", bio:"", photos:[], socials:[] },
+    { name:"Airani Iofifteen", accent:"#8ad42f", bio:"", photos:[], socials:[] },
   ]},
   { id:"holoro", label:"HOLORO", accent:"#fb923c", flag:"🇮🇩", members:[
-    { name:"Kureiji Ollie", bio:"", photos:[], socials:[] },
-    { name:"Anya Melfissa", bio:"", photos:[], socials:[] },
-    { name:"Pavolia Reine", bio:"", photos:[], socials:[] },
+    { name:"Kureiji Ollie", accent:"#dc2340", bio:"", photos:[], socials:[] },
+    { name:"Anya Melfissa", accent:"#33bfc0", bio:"", photos:[], socials:[] },
+    { name:"Pavolia Reine", accent:"#2f5fd0", bio:"", photos:[], socials:[] },
   ]},
   { id:"holoh3ro", label:"holoH3RO", accent:"#ea580c", flag:"🇮🇩", members:[
-    { name:"Vestia Zeta", bio:"", photos:[], socials:[] },
-    { name:"Kaela Kovalskia", bio:"", photos:[], socials:[] },
-    { name:"Kobo Kanaeru", bio:"", photos:[], socials:[] },
+    { name:"Vestia Zeta", accent:"#a0a0a0", bio:"", photos:[], socials:[] },
+    { name:"Kaela Kovalskia", accent:"#df3540", bio:"", photos:[], socials:[] },
+    { name:"Kobo Kanaeru", accent:"#5fb8e0", bio:"", photos:[], socials:[] },
   ]},
   { id:"myth", label:"Myth", accent:"#dc2626", flag:"🌐", members:[
-    { name:"Mori Calliope", bio:"", photos:[], socials:[] },
-    { name:"Takanashi Kiara", bio:"", photos:[], socials:[] },
-    { name:"Ninomae Ina'nis", bio:"", photos:[], socials:[] },
-    { name:"Watson Amelia", status:"affiliate", bio:"", photos:[], socials:[] },
-    { name:"Gawr Gura", status:"alum", bio:"", photos:[], socials:[] },
+    { name:"Mori Calliope", accent:"#8a1f30", bio:"", photos:[], socials:[] },
+    { name:"Takanashi Kiara", accent:"#e0522a", bio:"", photos:[], socials:[] },
+    { name:"Ninomae Ina'nis", accent:"#5c3c8c", bio:"", photos:[], socials:[] },
+    { name:"Watson Amelia", status:"affiliate", accent:"#d1a63a", bio:"", photos:[], socials:[] },
+    { name:"Gawr Gura", status:"alum", accent:"#2f6fd0", bio:"", photos:[], socials:[] },
   ]},
   { id:"hope", label:"Project: HOPE", accent:"#eab308", flag:"🌐", members:[
-    { name:"IRyS", bio:"", photos:[], socials:[] },
+    { name:"IRyS", accent:"#c23a98", bio:"", photos:[], socials:[] },
   ]},
   { id:"council", label:"Council", accent:"#3b82f6", flag:"🌐", members:[
-    { name:"Ouro Kronii", bio:"", photos:[], socials:[] },
-    { name:"Hakos Baelz", bio:"", photos:[], socials:[] },
-    { name:"Tsukumo Sana", status:"alum", bio:"", photos:[], socials:[] },
-    { name:"Ceres Fauna", status:"alum", bio:"", photos:[], socials:[] },
-    { name:"Nanashi Mumei", status:"alum", bio:"", photos:[], socials:[] },
+    { name:"Ouro Kronii", accent:"#1c3070", bio:"", photos:[], socials:[] },
+    { name:"Hakos Baelz", accent:"#ff8291", bio:"", photos:[], socials:[] },
+    { name:"Tsukumo Sana", status:"alum", accent:"#df4f9a", bio:"", photos:[], socials:[] },
+    { name:"Ceres Fauna", status:"alum", accent:"#4fb85a", bio:"", photos:[], socials:[] },
+    { name:"Nanashi Mumei", status:"alum", accent:"#a88a5f", bio:"", photos:[], socials:[] },
   ]},
   { id:"advent", label:"Advent", accent:"#c026d3", flag:"🌐", members:[
-    { name:"Shiori Novella", bio:"", photos:[], socials:[] },
-    { name:"Koseki Bijou", bio:"", photos:[], socials:[] },
-    { name:"Nerissa Ravencroft", bio:"", photos:[], socials:[] },
-    { name:"Fuwawa Abyssgard", bio:"", photos:[], socials:[] },
-    { name:"Mococo Abyssgard", bio:"", photos:[], socials:[] },
+    { name:"Shiori Novella", accent:"#8a6fc0", bio:"", photos:[], socials:[] },
+    { name:"Koseki Bijou", accent:"#ad9cd6", bio:"", photos:[], socials:[] },
+    { name:"Nerissa Ravencroft", accent:"#22336e", bio:"", photos:[], socials:[] },
+    { name:"Fuwawa Abyssgard", accent:"#7fc4e8", bio:"", photos:[], socials:[] },
+    { name:"Mococo Abyssgard", accent:"#ff8fc4", bio:"", photos:[], socials:[] },
   ]},
   { id:"justice", label:"Justice", accent:"#06b6d4", flag:"🌐", members:[
-    { name:"Elizabeth Rose Bloodflame", bio:"", photos:[], socials:[] },
-    { name:"Gigi Murin", bio:"", photos:[], socials:[] },
-    { name:"Cecilia Immergreen", bio:"", photos:[], socials:[] },
-    { name:"Raora Panthera", bio:"", photos:[], socials:[] },
+    { name:"Elizabeth Rose Bloodflame", accent:"#8a1a2a", bio:"", photos:[], socials:[] },
+    { name:"Gigi Murin", accent:"#ffa73a", bio:"", photos:[], socials:[] },
+    { name:"Cecilia Immergreen", accent:"#3aa658", bio:"", photos:[], socials:[] },
+    { name:"Raora Panthera", accent:"#df4488", bio:"", photos:[], socials:[] },
   ]},
   { id:"regloss", label:"ReGLOSS", accent:"#f43f5e", flag:"🇯🇵", members:[
-    { name:"Otonose Kanade", bio:"", photos:[], socials:[] },
-    { name:"Ichijou Ririka", bio:"", photos:[], socials:[] },
-    { name:"Juufuutei Raden", bio:"", photos:[], socials:[] },
-    { name:"Todoroki Hajime", bio:"", photos:[], socials:[] },
-    { name:"Hiodoshi Ao", status:"alum", bio:"", photos:[], socials:[] },
+    { name:"Otonose Kanade", accent:"#eec93a", bio:"", photos:[], socials:[] },
+    { name:"Ichijou Ririka", accent:"#ff8fb0", bio:"", photos:[], socials:[] },
+    { name:"Juufuutei Raden", accent:"#205c3c", bio:"", photos:[], socials:[] },
+    { name:"Todoroki Hajime", accent:"#ff9f2a", bio:"", photos:[], socials:[] },
+    { name:"Hiodoshi Ao", status:"alum", accent:"#1a2a5a", bio:"", photos:[], socials:[] },
   ]},
   { id:"flowglow", label:"FLOW GLOW", accent:"#65a30d", flag:"🇯🇵", members:[
-    { name:"Isaki Riona", bio:"", photos:[], socials:[] },
-    { name:"Koganei Niko", bio:"", photos:[], socials:[] },
-    { name:"Mizumiya Su", bio:"", photos:[], socials:[] },
-    { name:"Rindo Chihaya", bio:"", photos:[], socials:[] },
-    { name:"Kikirara Vivi", bio:"", photos:[], socials:[] },
+    { name:"Isaki Riona", accent:"#df3878", bio:"", photos:[], socials:[] },
+    { name:"Koganei Niko", accent:"#ff8f2a", bio:"", photos:[], socials:[] },
+    { name:"Mizumiya Su", accent:"#3fc4d8", bio:"", photos:[], socials:[] },
+    { name:"Rindo Chihaya", accent:"#205c5e", bio:"", photos:[], socials:[] },
+    { name:"Kikirara Vivi", accent:"#ff6fa0", bio:"", photos:[], socials:[] },
   ]},
 ];
 
