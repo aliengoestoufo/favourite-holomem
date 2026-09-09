@@ -154,11 +154,31 @@ const sections = [
     ] },
   ]},
   { id:"holox", label:"holoX", accent:"#a855f7", flag:"🇯🇵", members:[
-    { name:"La+ Darknesss", accent:"#4b2e82", bio:"", photos:[], socials:[] },
-    { name:"Takane Lui", accent:"#5e2030", bio:"", photos:[], socials:[] },
-    { name:"Hakui Koyori", accent:"#ff5aa0", bio:"", photos:[], socials:[] },
-    { name:"Kazama Iroha", accent:"#33b8a8", bio:"", photos:[], socials:[] },
-    { name:"Sakamata Chloe", status:"affiliate", accent:"#6fd4c0", bio:"", photos:[], socials:[] },
+    { name:"La+ Darknesss", accent:"#4b2e82", bio:"&ldquo;See me, hear me, all of you!&rdquo;<br><br>The one who established Secret Society holoX. She was originally known for her vast power and intelligence, but most of it is now sealed away. She is vaguely aware of the debilitating nature of her shackles but does not remember when or how they got there. The crow by her side is a long-time companion.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCENwRMx5Yh42zWpzURebzTw" },
+      { platform:"twitter", url:"https://twitter.com/LaplusDarknesss" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/la-darknesss/" },
+    ] },
+    { name:"Takane Lui", accent:"#5e2030", bio:"&ldquo;Did I Luive you waiting!?&rdquo;<br><br>The executive officer of Secret Society holoX. As holoX's point of contact and the one in charge of external affairs, she is the de facto leader of the group, handling matters that the founder cannot. While she may seem aloof and standoffish at first glance, she is a compassionate person who cares a lot for her subordinates.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCs9_O1tRPMQTHQ-N_L6FU2g" },
+      { platform:"twitter", url:"https://twitter.com/takanelui" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/takane-lui/" },
+    ] },
+    { name:"Hakui Koyori", accent:"#ff5aa0", bio:"&ldquo;The brain of holoX! My name is Koyori Hakui!&rdquo;<br><br>The one in charge of R&amp;D in Secret Society holoX. As part of her studies into human behavior, she meddles in the other members' affairs and tries to help them out at every turn. Possessed by an insatiable thirst for knowledge, she may sometimes also deliberately mess with people just to see how they react.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC6eWCld0KwmyHFbAqK3V-Rw" },
+      { platform:"twitter", url:"https://twitter.com/hakuikoyori" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/hakui-koyori/" },
+    ] },
+    { name:"Kazama Iroha", accent:"#33b8a8", bio:"&ldquo;Secret Society holoX's insurance policy, Kazama Iroha here, I daresay!&rdquo;<br><br>Secret Society holoX's insurance policy. Hailing from a remote mountainous area, she left her home behind and, along with her companion, set off on a journey to achieve her dream of seeing and learning more about the outside world. Nowadays, she handles security detail and bodyguard missions for holoX.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC_vMYWcDjmfdpH6r4TTn1MQ" },
+      { platform:"twitter", url:"https://twitter.com/kazamairohach" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/kazama-iroha/" },
+    ] },
+    { name:"Sakamata Chloe", status:"affiliate", accent:"#6fd4c0", bio:"&ldquo;Chomp, chomp, chooomp!&rdquo;<br><br>An intern who acts as a fixer and cleaner for Secret Society holoX. Calm and composed at all times, she carries out her orders without so much as batting an eyelid. She loves music and can be found listening to it every chance she gets.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCIBY1ollUsauvVi4hW4cumw" },
+      { platform:"twitter", url:"https://twitter.com/sakamatachloe" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/sakamata-chloe/" },
+    ] },
   ]},
   { id:"area15", label:"AREA15", accent:"#f97316", flag:"🇮🇩", members:[
     { name:"Ayunda Risu", accent:"#ffa0c4", bio:"", photos:[], socials:[] },
