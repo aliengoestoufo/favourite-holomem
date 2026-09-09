@@ -113,9 +113,21 @@ const sections = [
     ] },
   ]},
   { id:"gen4", label:"Gen 4", accent:"#8b5cf6", flag:"🇯🇵", members:[
-    { name:"Tsunomaki Watame", accent:"#eec213", bio:"", photos:[], socials:[] },
-    { name:"Tokoyami Towa", accent:"#8bc4e8", bio:"", photos:[], socials:[] },
-    { name:"Himemori Luna", accent:"#ff70a6", bio:"", photos:[], socials:[] },
+    { name:"Tsunomaki Watame", accent:"#eec213", bio:"&ldquo;Hoof, hoof, helloof!&rdquo; &ldquo;Watame did nothing wrong!&rdquo;<br><br>Loves singing, and as she continued uploading song covers and having weekly singing streams titled &ldquo;Watameh Night Fever!!,&rdquo; she started wanting to stand on Tokyo Budokan's stage someday.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA" },
+      { platform:"twitter", url:"https://twitter.com/tsunomakiwatame" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/tsunomaki-watame/" },
+    ] },
+    { name:"Tokoyami Towa", accent:"#8bc4e8", bio:"&ldquo;Suppies! 'Tis I, Tokoyami Towa, from hololive 4th Generation!&rdquo;<br><br>A young devil who is visiting human society to gain experience and develop her skills. But instead of studying, she became addicted to video games! After learning about a tool for communicating with humans called &ldquo;streaming,&rdquo; she's trying it out to help with her studies.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC1uv2Oq6kNxgATlCiez59hw" },
+      { platform:"twitter", url:"https://twitter.com/tokoyamitowa" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/tokoyami-towa/" },
+    ] },
+    { name:"Himemori Luna", accent:"#ff70a6", bio:"&ldquo;Is evewyone heeere?&rdquo;<br><br>The princess of Candy Kingdom. She's affectionate and loves being pampered, but her butler often scolds her for acting too spoiled. Her moon-shaped accessories are said to be the crest of a country in another world.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCa9Y57gfeY0Zro_noHRVrnw" },
+      { platform:"twitter", url:"https://twitter.com/himemoriluna" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/himemori-luna/" },
+    ] },
     { name:"Amane Kanata", status:"alum", accent:"#5fc4e8", bio:"", photos:[], socials:[] },
     { name:"Kiryu Coco", status:"alum", accent:"#ff9f3a", bio:"", photos:[], socials:[] },
   ]},
