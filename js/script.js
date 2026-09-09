@@ -181,9 +181,21 @@ const sections = [
     ] },
   ]},
   { id:"area15", label:"AREA15", accent:"#f97316", flag:"🇮🇩", members:[
-    { name:"Ayunda Risu", accent:"#ffa0c4", bio:"", photos:[], socials:[] },
-    { name:"Moona Hoshinova", accent:"#8a6bc9", bio:"", photos:[], socials:[] },
-    { name:"Airani Iofifteen", accent:"#8ad42f", bio:"", photos:[], socials:[] },
+    { name:"Ayunda Risu", accent:"#ffa0c4", bio:"&ldquo;Hewwrroo, everyone~!&rdquo; &ldquo;Purupuru ganbari Risu~!&rdquo;<br><br>A squirrel girl who came from a magical forest. After getting lost in the human world, she ended up living with a kind big sister under rather unusual circumstances. Wanting to repay her kindness, she decided to become a VTuber. Her mannerisms are just like a squirrel's. She's shy around strangers, but loves playing pranks and teasing her viewers. Her one-of-a-kind laugh is another part of her charm.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCOyYb1c43VlX9rc_lT6NKQw" },
+      { platform:"twitter", url:"https://twitter.com/ayunda_risu" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/ayunda-risu/" },
+    ] },
+    { name:"Moona Hoshinova", accent:"#8a6bc9", bio:"&ldquo;Moon Moon~ Moona Dayo!&rdquo;<br><br>A college girl who works as a model and idol, but later got interested to become a VTuber too. On some rare occasion, Moona's stream might be visited by Moona's &ldquo;another personality,&rdquo; Hoshinova. That has deeper big sister-like voices and sadistic tendencies. Pay attention to her streams to meet Hoshinova!", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCP0BspO_AMEe3aQqqpo89Dg" },
+      { platform:"twitter", url:"https://twitter.com/moonahoshinova" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/moona-hoshinova/" },
+    ] },
+    { name:"Airani Iofifteen", accent:"#8ad42f", bio:"&ldquo;IOFORIA~! OBISA!&rdquo; &ldquo;Selamat pagi! I'm your beloved smart alien Iofi from hololive AREA15! Nice to meet you!&rdquo;<br><br>An artistic-minded princess from outer space who ran away from home to visit Earth. Her love for Earth's culture grew so strong that she eventually enrolled in a university to study Visual Communication Design. She's known to tease her viewers from time to time, and occasionally takes on the role of Iomama. And every now and then, she completely loses herself to the gacha.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCAoy6rzhSf4ydcYjJw3WoVg" },
+      { platform:"twitter", url:"https://twitter.com/airaniiofifteen" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/airani-iofifteen/" },
+    ] },
   ]},
   { id:"holoro", label:"HOLORO", accent:"#fb923c", flag:"🇮🇩", members:[
     { name:"Kureiji Ollie", accent:"#dc2340", bio:"", photos:[], socials:[] },
