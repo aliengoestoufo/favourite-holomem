@@ -1,21 +1,49 @@
 /* ============ DATA ============ */
 const sections = [
   { id:"gen0", label:"Gen 0", accent:"#38bdf8", flag:"🇯🇵", members:[
-    { name:"Tokino Sora", bio:"&ldquo;Hey, Sora-tomo! How are you all doing? It's me, Tokino Sora!&rdquo;<br><br>hololive Production's first virtual idol, debuting on September 7, 2017. She loves horror games and singing, and has always dreamed of performing in Yokohama Arena.", photos:[], socials:[
+    { name:"Tokino Sora", accent:"#38bdf8", bio:"&ldquo;Hey, Sora-tomo! How are you all doing? It's me, Tokino Sora!&rdquo;<br><br>hololive Production's first virtual idol, debuting on September 7, 2017. She loves horror games and singing, and has always dreamed of performing in Yokohama Arena.", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UCp6993wxpyDPHUpavwDFqgg" },
       { platform:"twitter", url:"https://x.com/tokino_sora" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/tokino-sora/" },
     ] },
-    { name:"Robocosan", bio:"", photos:[], socials:[] },
-    { name:"AZKi", bio:"", photos:[], socials:[] },
-    { name:"Sakura Miko", bio:"", photos:[], socials:[] },
-    { name:"Hoshimachi Suisei", bio:"", photos:[], socials:[] },
+    { name:"Robocosan", accent:"#f87171", bio:"", photos:[], socials:[] },
+    { name:"AZKi", accent:"#d946ef", bio:"", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC0TXe_LYZ4scaW2XMyi5_kw" },
+      { platform:"twitter", url:"https://twitter.com/AZKi_VDiVA" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/azki/" },
+    ] },
+    { name:"Sakura Miko", accent:"#ec4899", bio:"", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC-hM6YJuNYVAmUWxeIr9FeA" },
+      { platform:"twitter", url:"https://twitter.com/sakuramiko35" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/sakuramiko/" },
+    ] },
+    { name:"Hoshimachi Suisei", accent:"#22d3ee", bio:"", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A" },
+      { platform:"twitter", url:"https://twitter.com/suisei_hosimati" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/hoshimachi-suisei/" },
+    ] },
   ]},
   { id:"gen1", label:"Gen 1", accent:"#f59e0b", flag:"🇯🇵", members:[
-    { name:"Aki Rosenthal", bio:"", photos:[], socials:[] },
-    { name:"Akai Haato", bio:"", photos:[], socials:[] },
-    { name:"Shirakami Fubuki", bio:"", photos:[], socials:[] },
-    { name:"Natsuiro Matsuri", bio:"", photos:[], socials:[] },
+    { name:"Aki Rosenthal", accent:"#eab308", bio:"", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCFTLzh12_nrtzqBPsTCqenA" },
+      { platform:"twitter", url:"https://twitter.com/akirosenthal" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/aki-rosenthal/" },
+    ] },
+    { name:"Akai Haato", accent:"#dc2626", bio:"", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC1CfXB_kRs3C-zaeTG3oGyg" },
+      { platform:"twitter", url:"https://twitter.com/akaihaato" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/akai-haato/" },
+    ] },
+    { name:"Shirakami Fubuki", accent:"#94a3b8", bio:"", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCdn5BQ06XqgXoAxIhbqw5Rg" },
+      { platform:"twitter", url:"https://twitter.com/shirakamifubuki" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/shirakami-fubuki/" },
+    ] },
+    { name:"Natsuiro Matsuri", accent:"#f97316", bio:"", photos:[], socials:[
+      { platform:"youtube", url:"https://youtube.com/channel/UCQ0UDLQCjY0rmuxCDE38FGg" },
+      { platform:"twitter", url:"https://twitter.com/natsuiromatsuri" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/natsuiro-matsuri/" },
+    ] },
   ]},
   { id:"gen2", label:"Gen 2", accent:"#ec4899", flag:"🇯🇵", members:[
     { name:"Nakiri Ayame", bio:"", photos:[], socials:[] },
@@ -119,20 +147,26 @@ const sections = [
 
 const STATUS_LABEL = { alum:"Alum", affiliate:"Affiliate" };
 
-/* Generic, non-trademarked icons + a color per platform — a plain
-   play triangle, a plain X, and a sparkle for the hololive page link.
-   (Not using the real YouTube/X/hololive logos on purpose — those are
-   trademarked and not mine to embed.) */
+/* Platform icons + a color per platform.
+   - youtube/twitter use close, recognizable approximations of their
+     actual marks — standard practice for "this links to X" icons,
+     the same reason link-badge icon packs exist.
+   - hololive defaults to a generic sparkle, since I can't draw hololive's
+     actual logo/mascots myself (that's real, non-abstract character
+     art, unlike a simple platform glyph). If a social entry includes
+     an `icon` path (see the `socials` format note up top), that image
+     is used instead of the generic icon below — so once you have a
+     mascot image file, it drops right in. */
 const SOCIAL_META = {
   youtube: {
     label:"YouTube",
-    color:"#ef4444",
-    icon:`<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`
+    color:"#ff0000",
+    icon:`<svg viewBox="0 0 28 20" fill="currentColor"><path d="M27.4 3.1c-.3-1.2-1.3-2.1-2.5-2.4C22.7.1 14 .1 14 .1s-8.7 0-10.9.6C1.9 1 .9 1.9.6 3.1 0 5.3 0 10 0 10s0 4.7.6 6.9c.3 1.2 1.3 2.1 2.5 2.4C5.3 19.9 14 19.9 14 19.9s8.7 0 10.9-.6c1.2-.3 2.2-1.2 2.5-2.4.6-2.2.6-6.9.6-6.9s0-4.7-.6-6.9z"/><path fill="#fff" d="M11.2 14.3V5.7L18.5 10z"/></svg>`
   },
   twitter: {
     label:"X",
-    color:"#111827",
-    icon:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>`
+    color:"#000000",
+    icon:`<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`
   },
   hololive: {
     label:"hololive page",
@@ -155,7 +189,7 @@ sections.forEach(section=>{
       photos: member.photos || [],
       socials: member.socials || [],
       tag: section.label,
-      accent: section.accent,
+      accent: member.accent || section.accent,
       flag: section.flag,
     });
   });
@@ -239,7 +273,7 @@ sections.forEach(section=>{
     const i = flatIndex++;
     const card = document.createElement('button');
     card.className = 'card';
-    card.style.setProperty('--card-accent', section.accent);
+    card.style.setProperty('--card-accent', member.accent || section.accent);
     const statusBit = member.status ? ` · ${STATUS_LABEL[member.status]}` : '';
     const photoMarkup = member.photos[0]
       ? `<img src="${member.photos[0]}" alt="${member.name}">`
@@ -293,7 +327,9 @@ function renderPanel(index, photoIndex){
     badge.rel = 'noopener noreferrer';
     badge.title = meta.label;
     badge.style.setProperty('--badge-accent', meta.color);
-    badge.innerHTML = meta.icon;
+    badge.innerHTML = social.icon
+      ? `<img src="${social.icon}" alt="${meta.label}" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">`
+      : meta.icon;
     panelSocials.appendChild(badge);
   });
 
