@@ -161,6 +161,11 @@ body.blur-bg main{
 .pill-nav-inner::-webkit-scrollbar-thumb:hover{
   background:linear-gradient(90deg, #0ea5e9, #9333ea);
 }
+.pill-nav-inner::-webkit-scrollbar-button{
+  display:none;
+  width:0;
+  height:0;
+}
 
 .nav-pill{
   flex-shrink:0;
