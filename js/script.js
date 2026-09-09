@@ -6,7 +6,11 @@ const sections = [
       { platform:"twitter", url:"https://x.com/tokino_sora" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/tokino-sora/" },
     ] },
-    { name:"Robocosan", accent:"#f87171", bio:"", photos:[], socials:[] },
+    { name:"Robocosan", accent:"#f87171", bio:"&ldquo;Hellobo! Roboco here!&rdquo;<br><br>Hellobo! It's me, the high-spec hololive VTuber Roboco! I showed up from a faraway wasteland having lost all my memories. I believe I'm pretty high-spec, but some rumors say that it'd be more accurate to call me &ldquo;broken&rdquo;... lol. I'm a gamer gal whose defining trait is a very human, emotional singing voice!", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCDqI2jOz0weumE8s7paEk6g" },
+      { platform:"twitter", url:"https://twitter.com/robocosan" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/roboco-san/" },
+    ] },
     { name:"AZKi", accent:"#d946ef", bio:"", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UC0TXe_LYZ4scaW2XMyi5_kw" },
       { platform:"twitter", url:"https://twitter.com/AZKi_VDiVA" },
@@ -46,11 +50,23 @@ const sections = [
     ] },
   ]},
   { id:"gen2", label:"Gen 2", accent:"#ec4899", flag:"🇯🇵", members:[
-    { name:"Nakiri Ayame", bio:"", photos:[], socials:[] },
-    { name:"Yuzuki Choco", bio:"", photos:[], socials:[] },
-    { name:"Oozora Subaru", bio:"", photos:[], socials:[] },
-    { name:"Minato Aqua", status:"alum", bio:"", photos:[], socials:[] },
-    { name:"Murasaki Shion", status:"alum", bio:"", photos:[], socials:[] },
+    { name:"Nakiri Ayame", accent:"#b91c1c", bio:"&ldquo;Greetings, Humans! Yoohoo!&rdquo;<br><br>A kimono-clad Oni girl from the Underworld Academy. As she loves to prank people, she always uses will-o'-the-wisp on them just to have fun. Many may not realize it, but she is actually the president of the student council.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC7fk0CB07ly8oSl0aqKkqFg" },
+      { platform:"twitter", url:"https://twitter.com/nakiriayame" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/nakiri-ayame/" },
+    ] },
+    { name:"Yuzuki Choco", accent:"#b45309", bio:"&ldquo;Good evening, my cute students! Choc-on!&rdquo;<br><br>The school nurse at the Underworld Academy. Is incredibly popular among the students, with the boys in particular coming to get checked up all the time. Loves sweets, and often gets into trouble for leaving them strewn about on her desk.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC1suqwovbL1kzsoaZgFZLKg" },
+      { platform:"twitter", url:"https://twitter.com/yuzukichococh" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/yuzuki-choco/" },
+    ] },
+    { name:"Oozora Subaru", accent:"#92400e", bio:"&ldquo;Sup! I'm Oozora Subaru from hololive 2nd Generation!&rdquo;<br><br>The manager of an MMA team and an e-sports club. A bright and cheerful girl full of spirit, she can interact with anyone and everyone without hesitation. She's currently working hard on her own pro-gamer skills.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCvzGlP9oQwU--Y0r9id_jnA" },
+      { platform:"twitter", url:"https://twitter.com/oozorasubaru" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/oozora-subaru/" },
+    ] },
+    { name:"Minato Aqua", status:"alum", accent:"#f472b6", bio:"", photos:[], socials:[] },
+    { name:"Murasaki Shion", status:"alum", accent:"#9333ea", bio:"", photos:[], socials:[] },
   ]},
   { id:"gamers", label:"GAMERS", accent:"#10b981", flag:"🇯🇵", members:[
     { name:"Shirakami Fubuki", bio:"", photos:[], socials:[] },
