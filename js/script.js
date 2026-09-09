@@ -174,7 +174,7 @@ const sections = [
       { platform:"twitter", url:"https://twitter.com/kazamairohach" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/kazama-iroha/" },
     ] },
-    { name:"Sakamata Chloe", status:"affiliate", accent:"#6fd4c0", bio:"&ldquo;Chomp, chomp, chooomp!&rdquo;<br><br>An intern who acts as a fixer and cleaner for Secret Society holoX. Calm and composed at all times, she carries out her orders without so much as batting an eyelid. She loves music and can be found listening to it every chance she gets.", photos:[], socials:[
+    { name:"Sakamata Chloe", status:"affiliate", accent:"#d32f3d", bio:"&ldquo;Chomp, chomp, chooomp!&rdquo;<br><br>An intern who acts as a fixer and cleaner for Secret Society holoX. Calm and composed at all times, she carries out her orders without so much as batting an eyelid. She loves music and can be found listening to it every chance she gets.", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UCIBY1ollUsauvVi4hW4cumw" },
       { platform:"twitter", url:"https://twitter.com/sakamatachloe" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/sakamata-chloe/" },
@@ -198,9 +198,21 @@ const sections = [
     ] },
   ]},
   { id:"holoro", label:"HOLORO", accent:"#fb923c", flag:"🇮🇩", members:[
-    { name:"Kureiji Ollie", accent:"#dc2340", bio:"", photos:[], socials:[] },
-    { name:"Anya Melfissa", accent:"#33bfc0", bio:"", photos:[], socials:[] },
-    { name:"Pavolia Reine", accent:"#2f5fd0", bio:"", photos:[], socials:[] },
+    { name:"Kureiji Ollie", accent:"#dc2340", bio:"&ldquo;ZOMBANWA!! SUPER KAWAII ZOMBIE IDOL, KU KU KU KUREIJI OLLIE DESU~!!&rdquo;<br><br>A zombie high school girl risen from her grave. She headed home, relying on memories retained from when she was still alive. Upon arriving, she discovered it had turned into a ramen shop! And so, in order to reclaim her house, she decided to become a VTuber. Ollie has a very big tendency to scream. Always lower your volumes during her streams.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCYz_5n-uDuChHtLo7My1HnQ" },
+      { platform:"twitter", url:"https://twitter.com/kureijiollie" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/kureiji-ollie/" },
+    ] },
+    { name:"Anya Melfissa", accent:"#33bfc0", bio:"&ldquo;Good day! This is Anya Melfissa from hololive holoro.&rdquo;<br><br>An ancient weapon known as &ldquo;Keris,&rdquo; she was granted human form through a mystical ritual performed by her master. She's just about always sleeping or playing games. Living mostly alone for so long has made her tend to be apathetic towards things and people she's uninterested in, but when talking about things she likes, she can be quite childlike and passionate.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC727SQYUvx5pDDGQpTICNWg" },
+      { platform:"twitter", url:"https://twitter.com/anyamelfissa" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/anya-melfissa/" },
+    ] },
+    { name:"Pavolia Reine", accent:"#2f5fd0", bio:"&ldquo;Perhatian, sang putri merak yang tertiup angin, aku Pavolia Reine dari hololive ID.&rdquo;<br><br>Lady of the Peafowl. While studying at a magic academy, she was involved in an incident and transferred to the human world. Since then, she has been unable to use much of her magic. Very fond of sweets, but weak with overly spicy food. At first glance, she seems to be the elegant type, but people who spend some more time with her will find out that she has more of a dorky personality.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UChgTyjG-pdNvxxhdsXfHQ5Q" },
+      { platform:"twitter", url:"https://twitter.com/pavoliareine" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/pavolia-reine/" },
+    ] },
   ]},
   { id:"holoh3ro", label:"holoH3RO", accent:"#ea580c", flag:"🇮🇩", members:[
     { name:"Vestia Zeta", accent:"#a0a0a0", bio:"", photos:[], socials:[] },
