@@ -132,10 +132,26 @@ const sections = [
     { name:"Kiryu Coco", status:"alum", accent:"#ff9f3a", bio:"", photos:[], socials:[] },
   ]},
   { id:"gen5", label:"Gen 5", accent:"#0ea5e9", flag:"🇯🇵", members:[
-    { name:"Yukihana Lamy", accent:"#5fc2e0", bio:"", photos:[], socials:[] },
-    { name:"Momosuzu Nene", accent:"#ff9f40", bio:"", photos:[], socials:[] },
-    { name:"Shishiro Botan", accent:"#4fc4ad", bio:"", photos:[], socials:[] },
-    { name:"Omaru Polka", accent:"#e0343f", bio:"", photos:[], socials:[] },
+    { name:"Yukihana Lamy", accent:"#5fc2e0", bio:"&ldquo;Lamyoohoo!&rdquo;<br><br>hololive 5th Generation's Yukihana Lamy! The daughter of a noble snow family living in the vast, white, icy lands far from civilization. Struck by the smiles and vibrant live streams by the talents from hololive, she burst out of the comforts of her home with her companion, Daifuku. Her serious facade belies her clueless and empty-headed side of her.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCFKOVgVbGmX65RxO3EtH3iw" },
+      { platform:"twitter", url:"https://twitter.com/yukihanalamy" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/yukihana-lamy/" },
+    ] },
+    { name:"Momosuzu Nene", accent:"#ff9f40", bio:"&ldquo;Kon-Nene~! hololive 5th Generation, Momosuzu Nene the idol VTuber!&rdquo;<br><br>A girl who came from another world in order to become an idol. She loves singing and dancing, and drawing. She is training hard every day to become someone loved by many.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCAWSyEs_Io8MtpY3m-zqILA" },
+      { platform:"twitter", url:"https://twitter.com/momosuzunene" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/momosuzu-nene/" },
+    ] },
+    { name:"Shishiro Botan", accent:"#4fc4ad", bio:"&ldquo;La-lion&#9834;&rdquo; &ldquo;Well then, cya~&rdquo;<br><br>Contrary to her sporty appearance, she's a white lion who prefers lazing around. Despite her typically hands-off attitude, once she has made up her mind she will always follow through to the end. Her favorite phrase is &ldquo;Wealth isn't measured with money.&rdquo;", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCUKD-uaobj9jiqB-VXt71mA" },
+      { platform:"twitter", url:"https://twitter.com/shishirobotan" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/shishiro-botan/" },
+    ] },
+    { name:"Omaru Polka", accent:"#e0343f", bio:"&ldquo;Is Polka on the dot? Yes, she is!&rdquo;<br><br>A circus performer who joined hololive in hopes of becoming the ringmaster of the VTuber world. She enjoys wowing audiences with acrobatics, and she lives by the words, &ldquo;When you've decided you're gonna do something, follow through!&rdquo; Her natural charm glosses over her occasional mess-ups.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCK9V2B22uJYu3N7eR_BT9QA" },
+      { platform:"twitter", url:"https://twitter.com/omarupolka" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/omaru-polka/" },
+    ] },
   ]},
   { id:"holox", label:"holoX", accent:"#a855f7", flag:"🇯🇵", members:[
     { name:"La+ Darknesss", accent:"#4b2e82", bio:"", photos:[], socials:[] },
