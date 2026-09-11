@@ -280,8 +280,11 @@ main{
 
 #content{
   position:relative;
-  overflow:hidden;
   transition:height .45s cubic-bezier(.4,0,.2,1);
+}
+
+#content.transitioning{
+  overflow:hidden;
 }
 
 .section{
