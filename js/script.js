@@ -232,11 +232,26 @@ const sections = [
     ] },
   ]},
   { id:"myth", label:"Myth", accent:"#dc2626", flag:"🌐", members:[
-    { name:"Mori Calliope", accent:"#8a1f30", bio:"", photos:[], socials:[] },
-     { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/mori-calliope/" },
-    { name:"Takanashi Kiara", accent:"#e0522a", bio:"", photos:[], socials:[] },
-    { name:"Ninomae Ina'nis", accent:"#5c3c8c", bio:"", photos:[], socials:[] },
-    { name:"Watson Amelia", status:"affiliate", accent:"#d1a63a", bio:"", photos:[], socials:[] },
+    { name:"Mori Calliope", accent:"#8a1f30", bio:"&ldquo;Dead Beats, listen up! Your Mori's been working hard for you!&rdquo;<br><br>The Grim Reaper's first apprentice. Due to modern medical care causing a decline in the reaping business, Calliope decided to become a VTuber to harvest souls instead. It seems that the ascended souls of the people who are vaporized by the wholesome interactions between VTubers go to her as well. That being said, despite the image her hardcore vocals and manner of speech gives off, she's actually a gentle-hearted girl who cares greatly for her friends.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCL_qhgtOy0dy1Agp8vkySQg" },
+      { platform:"twitter", url:"https://twitter.com/moricalliope" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/mori-calliope/" },
+    ] },
+    { name:"Takanashi Kiara", accent:"#e0522a", bio:"&ldquo;Kikkeriki!!! Welcome to KFP, are you here to order or to apply for a job?&rdquo;<br><br>An idol whose dream is to become the owner of a fast food chain. Kiara is a phoenix, not a chicken or turkey. (Very important) She burns brightly, working herself to the bone since she'll just be reborn from her ashes anyway.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCHsx4Hqa-1ORjQTh9TYDhww" },
+      { platform:"twitter", url:"https://twitter.com/takanashikiara" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/takanashi-kiara/" },
+    ] },
+    { name:"Ninomae Ina'nis", accent:"#5c3c8c", bio:"&ldquo;Good morning, afternoon, evening! Hope you're having a WAHnderful day!&rdquo;<br><br>Despite her looks, Ina'nis is actually a priestess of the Ancient Ones. One day, she picked up a strange book and then started to gain the power of controlling tentacles. To her, tentacles are just a part in her ordinary life; it has never been a big deal for her. However, her girly mind does want to get them dressed up and stay pretty. After gaining power, she started hearing Ancient Whispers and Revelations. Hence, she began her VTuber activities to deliver random sanity checks on humanity, as an ordinary girl.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg" },
+      { platform:"twitter", url:"https://twitter.com/ninomaeinanis" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/ninomae-inanis/" },
+    ] },
+    { name:"Watson Amelia", status:"affiliate", accent:"#d1a63a", bio:"&ldquo;Test test, Hello~ Amelia Watson! #1 Detective at your service!&rdquo;<br><br>Amelia heard strange rumors online surrounding hololive: talking foxes, magical squirrels, superhuman dogs, and more. Soon after beginning her investigation on hololive, and just out of interest, she decided to become an idol herself! She loves to pass her time training her reflexes with FPS games, and challenging herself with puzzle games. &ldquo;It's elementary, right?&rdquo;", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCyl1z3jo3XHR1riLFKG5UAg" },
+      { platform:"twitter", url:"https://twitter.com/watsonameliaEN" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/watson-amelia/" },
+    ] },
     { name:"Gawr Gura", status:"alum", accent:"#2f6fd0", bio:"", photos:[], socials:[] },
   ]},
   { id:"hope", label:"Project: HOPE", accent:"#eab308", flag:"🌐", members:[
@@ -466,6 +481,7 @@ function goToSection(index, animate = true, pushHistory = true){
   }
 
   sectionTransitioning = true;
+  content.classList.add('transitioning');
 
   const startHeight = content.offsetHeight;
   content.style.height = startHeight + 'px';
@@ -498,6 +514,7 @@ function goToSection(index, animate = true, pushHistory = true){
     newEl.style.transform = '';
     newEl.style.opacity = '';
     content.style.height = 'auto';
+    content.classList.remove('transitioning');
     currentSectionIndex = index;
     sectionTransitioning = false;
   }, 460);
