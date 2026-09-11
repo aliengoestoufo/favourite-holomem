@@ -215,9 +215,21 @@ const sections = [
     ] },
   ]},
   { id:"holoh3ro", label:"holoH3RO", accent:"#ea580c", flag:"🇮🇩", members:[
-    { name:"Vestia Zeta", accent:"#a0a0a0", bio:"", photos:[], socials:[] },
-    { name:"Kaela Kovalskia", accent:"#df3540", bio:"", photos:[], socials:[] },
-    { name:"Kobo Kanaeru", accent:"#5fb8e0", bio:"", photos:[], socials:[] },
+    { name:"Vestia Zeta", accent:"#a0a0a0", bio:"&ldquo;Aah! Mission start! I'm Vestia Zeta from hololive holoh3ro!&rdquo;<br><br>She is the mysterious 7th recruit of The Secret Archive Unit that has a full license to collect virtual data. Despite her being a promising rookie, who is also known as codename V.7, she turns clumsy when things are not going exactly according to the manual. It was initially a lonely mission to infiltrate the virtual world, but now she had found comfort here. Will this mission end up leading her to a new destiny instead...?", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCTvHWSfBZgtxE4sILOaurIQ" },
+      { platform:"twitter", url:"https://twitter.com/vestiazeta" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/vestia-zeta/" },
+    ] },
+    { name:"Kaela Kovalskia", accent:"#df3540", bio:"&ldquo;Hello, everyone! I'm Kaela, the blacksmith of hololive holoh3ro!&rdquo;<br><br>After taking over her great blacksmithing teacher's forge, she felt a lack of excitement in her life. So, she decided to be free and depart on a journey to find rare smithing materials, one of which was rumored to be under the building of a certain &ldquo;idol group&rdquo; in town. She also loves challenging herself and has a peculiar taste when it comes to food!", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCZLZ8Jjx_RN2CXloOmgTHVg" },
+      { platform:"twitter", url:"https://twitter.com/kaelakovalskia" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/kaela-kovalskia/" },
+    ] },
+    { name:"Kobo Kanaeru", accent:"#5fb8e0", bio:"&ldquo;Bokobokobo Kobo Kanaeru at your service!&rdquo;<br><br>A carefree girl who lives in the topmost room of a lighthouse, she is actually the bloodline of the strongest rain shaman in the area. She has great potential to control rain, but she does not like to do it as a task. In order to win back her Rain Master title, she needs to prove to her family that she can keep their rain shaman service afloat. Not only does she have to train daily, but she also needs to adopt some sort of virtual marketing strategy to succeed!", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCjLEmnpCNeisMxy134KPwWw" },
+      { platform:"twitter", url:"https://twitter.com/kobokanaeru" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/kobo-kanaeru/" },
+    ] },
   ]},
   { id:"myth", label:"Myth", accent:"#dc2626", flag:"🌐", members:[
     { name:"Mori Calliope", accent:"#8a1f30", bio:"", photos:[], socials:[] },
