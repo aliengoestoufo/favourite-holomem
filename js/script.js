@@ -254,10 +254,8 @@ const sections = [
     ] },
     { name:"Gawr Gura", status:"alum", accent:"#2f6fd0", bio:"", photos:[], socials:[] },
   ]},
-  { id:"hope", label:"Project: HOPE", accent:"#eab308", flag:"🌐", members:[
-    { name:"IRyS", accent:"#c23a98", bio:"", photos:[], socials:[] },
-  ]},
   { id:"council", label:"Council", accent:"#3b82f6", flag:"🌐", members:[
+    { name:"IRyS", accent:"#c23a98", bio:"", photos:[], socials:[] },
     { name:"Ouro Kronii", accent:"#1c3070", bio:"", photos:[], socials:[] },
     { name:"Hakos Baelz", accent:"#ff8291", bio:"", photos:[], socials:[] },
     { name:"Tsukumo Sana", status:"alum", accent:"#df4f9a", bio:"", photos:[], socials:[] },
@@ -445,7 +443,7 @@ sections.forEach(section=>{
   content.appendChild(sectionEl);
 });
 
-/* ============ SECTION SWITCHING (single-view, sliding transitions) ============ */
+/* ============ SECTION SWITCHING (single-view, blur-crossfade transitions) ============ */
 const sectionEls = sections.map(s => document.getElementById(s.id));
 let currentSectionIndex = 0;
 let sectionTransitioning = false;
@@ -454,10 +452,10 @@ function setCurrentPillHighlight(index){
   navPillEls.forEach((el, i)=> el.classList.toggle('current', i === index));
 }
 
-/* index: target section index. animate: false skips the slide (used on
-   initial page load / direct hash load). pushHistory: false when we're
-   responding to a browser back/forward event, since the URL is already
-   correct in that case. */
+/* index: target section index. animate: false skips the crossfade (used
+   on initial page load / direct hash load). pushHistory: false when
+   we're responding to a browser back/forward event, since the URL is
+   already correct in that case. */
 function goToSection(index, animate = true, pushHistory = true){
   if(index < 0 || index >= sectionEls.length) return;
   if(index === currentSectionIndex && sectionEls[index].classList.contains('active')) return;
@@ -465,7 +463,6 @@ function goToSection(index, animate = true, pushHistory = true){
 
   const oldEl = sectionEls[currentSectionIndex];
   const newEl = sectionEls[index];
-  const direction = index > currentSectionIndex ? 'next' : 'prev';
 
   setCurrentPillHighlight(index);
 
@@ -474,50 +471,50 @@ function goToSection(index, animate = true, pushHistory = true){
   }
 
   if(!animate){
-    sectionEls.forEach(el => el.classList.remove('active', 'slide-anim'));
+    sectionEls.forEach(el => el.classList.remove('active', 'fade-anim'));
     newEl.classList.add('active');
     currentSectionIndex = index;
     return;
   }
 
   sectionTransitioning = true;
-  content.classList.add('transitioning');
 
   const startHeight = content.offsetHeight;
   content.style.height = startHeight + 'px';
 
-  oldEl.classList.add('slide-anim');
-  newEl.classList.add('slide-anim', 'active');
+  oldEl.classList.add('fade-anim');
+  newEl.classList.add('fade-anim', 'active');
 
-  const outDist = direction === 'next' ? '-100%' : '100%';
-  const inStart = direction === 'next' ? '100%' : '-100%';
-
-  newEl.style.transform = `translateX(${inStart})`;
   newEl.style.opacity = '0';
-  // force reflow so the starting position registers before we animate
+  newEl.style.filter = 'blur(14px)';
+  newEl.style.transform = 'scale(0.98)';
+  // force reflow so the starting state registers before we animate
   newEl.getBoundingClientRect();
   const endHeight = newEl.scrollHeight;
 
   requestAnimationFrame(()=>{
-    oldEl.style.transform = `translateX(${outDist})`;
     oldEl.style.opacity = '0';
-    newEl.style.transform = 'translateX(0)';
+    oldEl.style.filter = 'blur(14px)';
+    oldEl.style.transform = 'scale(0.98)';
     newEl.style.opacity = '1';
+    newEl.style.filter = 'blur(0px)';
+    newEl.style.transform = 'scale(1)';
     content.style.height = endHeight + 'px';
   });
 
   setTimeout(()=>{
-    oldEl.classList.remove('active', 'slide-anim');
-    oldEl.style.transform = '';
+    oldEl.classList.remove('active', 'fade-anim');
     oldEl.style.opacity = '';
-    newEl.classList.remove('slide-anim');
-    newEl.style.transform = '';
+    oldEl.style.filter = '';
+    oldEl.style.transform = '';
+    newEl.classList.remove('fade-anim');
     newEl.style.opacity = '';
+    newEl.style.filter = '';
+    newEl.style.transform = '';
     content.style.height = 'auto';
-    content.classList.remove('transitioning');
     currentSectionIndex = index;
     sectionTransitioning = false;
-  }, 460);
+  }, 420);
 }
 
 window.addEventListener('popstate', ()=>{
