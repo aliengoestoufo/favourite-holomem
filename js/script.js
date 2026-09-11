@@ -233,6 +233,7 @@ const sections = [
   ]},
   { id:"myth", label:"Myth", accent:"#dc2626", flag:"🌐", members:[
     { name:"Mori Calliope", accent:"#8a1f30", bio:"", photos:[], socials:[] },
+     { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/mori-calliope/" },
     { name:"Takanashi Kiara", accent:"#e0522a", bio:"", photos:[], socials:[] },
     { name:"Ninomae Ina'nis", accent:"#5c3c8c", bio:"", photos:[], socials:[] },
     { name:"Watson Amelia", status:"affiliate", accent:"#d1a63a", bio:"", photos:[], socials:[] },
