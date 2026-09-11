@@ -342,14 +342,20 @@ for(let i=0;i<BLOB_COUNT;i++){
 const navPillsEl = document.getElementById('navPills');
 const personIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"></path></svg>`;
 
-sections.forEach(section=>{
+sections.forEach((section, i)=>{
   const a = document.createElement('a');
   a.href = `#${section.id}`;
   a.className = 'nav-pill';
   a.textContent = section.label;
   a.style.setProperty('--pill-accent', section.accent);
+  a.addEventListener('click', (e)=>{
+    e.preventDefault();
+    goToSection(i);
+  });
   navPillsEl.appendChild(a);
 });
+
+const navPillEls = [...navPillsEl.children];
 
 /* ============ NAV LIQUID SHIMMER (follows cursor) ============ */
 const pillNavGlass = document.querySelector('.pill-nav-glass');
@@ -410,6 +416,95 @@ sections.forEach(section=>{
   sectionEl.appendChild(grid);
   content.appendChild(sectionEl);
 });
+
+/* ============ SECTION SWITCHING (single-view, sliding transitions) ============ */
+const sectionEls = sections.map(s => document.getElementById(s.id));
+let currentSectionIndex = 0;
+let sectionTransitioning = false;
+
+function setCurrentPillHighlight(index){
+  navPillEls.forEach((el, i)=> el.classList.toggle('current', i === index));
+}
+
+/* index: target section index. animate: false skips the slide (used on
+   initial page load / direct hash load). pushHistory: false when we're
+   responding to a browser back/forward event, since the URL is already
+   correct in that case. */
+function goToSection(index, animate = true, pushHistory = true){
+  if(index < 0 || index >= sectionEls.length) return;
+  if(index === currentSectionIndex && sectionEls[index].classList.contains('active')) return;
+  if(sectionTransitioning) return;
+
+  const oldEl = sectionEls[currentSectionIndex];
+  const newEl = sectionEls[index];
+  const direction = index > currentSectionIndex ? 'next' : 'prev';
+
+  setCurrentPillHighlight(index);
+
+  if(pushHistory){
+    history.pushState(null, '', `#${sections[index].id}`);
+  }
+
+  if(!animate){
+    sectionEls.forEach(el => el.classList.remove('active', 'slide-anim'));
+    newEl.classList.add('active');
+    currentSectionIndex = index;
+    return;
+  }
+
+  sectionTransitioning = true;
+
+  const startHeight = content.offsetHeight;
+  content.style.height = startHeight + 'px';
+
+  oldEl.classList.add('slide-anim');
+  newEl.classList.add('slide-anim', 'active');
+
+  const outDist = direction === 'next' ? '-100%' : '100%';
+  const inStart = direction === 'next' ? '100%' : '-100%';
+
+  newEl.style.transform = `translateX(${inStart})`;
+  newEl.style.opacity = '0';
+  // force reflow so the starting position registers before we animate
+  newEl.getBoundingClientRect();
+  const endHeight = newEl.scrollHeight;
+
+  requestAnimationFrame(()=>{
+    oldEl.style.transform = `translateX(${outDist})`;
+    oldEl.style.opacity = '0';
+    newEl.style.transform = 'translateX(0)';
+    newEl.style.opacity = '1';
+    content.style.height = endHeight + 'px';
+  });
+
+  setTimeout(()=>{
+    oldEl.classList.remove('active', 'slide-anim');
+    oldEl.style.transform = '';
+    oldEl.style.opacity = '';
+    newEl.classList.remove('slide-anim');
+    newEl.style.transform = '';
+    newEl.style.opacity = '';
+    content.style.height = 'auto';
+    currentSectionIndex = index;
+    sectionTransitioning = false;
+  }, 460);
+}
+
+window.addEventListener('popstate', ()=>{
+  const id = location.hash.replace('#', '');
+  const idx = sections.findIndex(s => s.id === id);
+  goToSection(idx === -1 ? 0 : idx, true, false);
+});
+
+/* Initial section on load: whatever's in the URL hash, or the first one */
+(function initSection(){
+  const id = location.hash.replace('#', '');
+  const idx = sections.findIndex(s => s.id === id);
+  const startIndex = idx === -1 ? 0 : idx;
+  sectionEls[startIndex].classList.add('active');
+  currentSectionIndex = startIndex;
+  setCurrentPillHighlight(startIndex);
+})();
 
 /* ============ MODAL ============ */
 const backdrop = document.getElementById('backdrop');
