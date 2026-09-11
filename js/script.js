@@ -255,9 +255,21 @@ const sections = [
     { name:"Gawr Gura", status:"alum", accent:"#2f6fd0", bio:"", photos:[], socials:[] },
   ]},
   { id:"council", label:"Council", accent:"#3b82f6", flag:"🌐", members:[
-    { name:"IRyS", accent:"#c23a98", bio:"", photos:[], socials:[] },
-    { name:"Ouro Kronii", accent:"#1c3070", bio:"", photos:[], socials:[] },
-    { name:"Hakos Baelz", accent:"#ff8291", bio:"", photos:[], socials:[] },
+    { name:"IRyS", accent:"#c23a98", bio:"&ldquo;HiRyS, it's IRyS! Your seiso nephilim here to fill the world with hopium!&rdquo;<br><br>A Nephilim who was once the embodiment of hope back in &ldquo;The Paradise&rdquo;. While she has left to set off on an adventure, she continues to deliver hope through her lyrics and songs, with determination in her voice. She also bears the precarious and unstable dual nature of a half-demon and half-angel; this phenomenon can be observed on rare occasions, in the form of the most unpredictably surprising comments from IRyS herself. Bewildering those around her is but another unexpected charm of her duality.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC8rcEBzJSleTkf_-agPM20g" },
+      { platform:"twitter", url:"https://twitter.com/irys_en" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/irys/" },
+    ] },
+    { name:"Ouro Kronii", accent:"#1c3070", bio:"&ldquo;Kroniichiwa! It's me, perfection. Also synonymous for Ouro Kronii!&rdquo;<br><br>Time is an unwavering, precise entity, and its Warden - its overseer - is equally cool and impeccable. Occasionally her exquisiteness leads her to decisions and bouts of luck that transcend the understanding of mere mortals. However, even utmost perfection finds no foothold in the face of her mortal enemy—disorder.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCmbs8T6MWqUHP1tIQvSgKrg" },
+      { platform:"twitter", url:"https://twitter.com/ourokronii" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/ouro-kronii/" },
+    ] },
+    { name:"Hakos Baelz", accent:"#ff8291", bio:"&ldquo;WAZZUP!! It's your worldwide Rat Idol --- Hakos Baelz!&rdquo;<br><br>Chaos. Mayhem. Entropy..... All in the form of a cute little rat. She is a performer looking for her next stage. Occassionally she will get swept up in her own storm, but that's just part of the fun.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCgmPnx-EEeOrZSg5Tiw7ZRQ" },
+      { platform:"twitter", url:"https://twitter.com/hakosbaelz" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/hakos-baelz/" },
+    ] },
     { name:"Tsukumo Sana", status:"alum", accent:"#df4f9a", bio:"", photos:[], socials:[] },
     { name:"Ceres Fauna", status:"alum", accent:"#4fb85a", bio:"", photos:[], socials:[] },
     { name:"Nanashi Mumei", status:"alum", accent:"#a88a5f", bio:"", photos:[], socials:[] },
@@ -293,16 +305,6 @@ const sections = [
 
 const STATUS_LABEL = { alum:"Alum", affiliate:"Affiliate" };
 
-/* Platform icons + a color per platform.
-   - youtube/twitter use close, recognizable approximations of their
-     actual marks — standard practice for "this links to X" icons,
-     the same reason link-badge icon packs exist.
-   - hololive defaults to a generic sparkle, since I can't draw hololive's
-     actual logo/mascots myself (that's real, non-abstract character
-     art, unlike a simple platform glyph). If a social entry includes
-     an `icon` path (see the `socials` format note up top), that image
-     is used instead of the generic icon below — so once you have a
-     mascot image file, it drops right in. */
 const SOCIAL_META = {
   youtube: {
     label:"YouTube",
@@ -321,10 +323,6 @@ const SOCIAL_META = {
   }
 };
 
-/* Flatten into one ordered list so the popup can cycle through everyone.
-   This just copies each member's fields through — it does NOT invent
-   any text. If bio/photos/socials are empty, that's carried through as
-   empty, and the render functions below decide what placeholder to show. */
 const members = [];
 sections.forEach(section=>{
   section.members.forEach(member=>{
