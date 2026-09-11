@@ -280,11 +280,7 @@ main{
 
 #content{
   position:relative;
-  transition:height .45s cubic-bezier(.4,0,.2,1);
-}
-
-#content.transitioning{
-  overflow:hidden;
+  transition:height .4s cubic-bezier(.4,0,.2,1);
 }
 
 .section{
@@ -296,16 +292,16 @@ main{
   display:block;
 }
 
-.section.slide-anim{
+.section.fade-anim{
   position:absolute;
   top:0;
   left:0;
   width:100%;
-  transition:transform .45s cubic-bezier(.4,0,.2,1), opacity .4s ease;
+  transition:opacity .4s ease, filter .4s ease, transform .4s ease;
 }
 
 @media (prefers-reduced-motion: reduce){
-  #content, .section.slide-anim{ transition:none; }
+  #content, .section.fade-anim{ transition:none; }
 }
 
 .section-title{
