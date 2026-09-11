@@ -6,7 +6,6 @@ const sections = [
       { platform:"twitter", url:"https://x.com/tokino_sora" },
       { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/tokino-sora/" },
     ] },
-    
     { name:"Robocosan", accent:"#a888b8", bio:"&ldquo;Hellobo! Roboco here!&rdquo;<br><br>Hellobo! It's me, the high-spec hololive VTuber Roboco! I showed up from a faraway wasteland having lost all my memories. I believe I'm pretty high-spec, but some rumors say that it'd be more accurate to call me &ldquo;broken&rdquo;... lol. I'm a gamer gal whose defining trait is a very human, emotional singing voice!", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UCDqI2jOz0weumE8s7paEk6g" },
       { platform:"twitter", url:"https://twitter.com/robocosan" },
