@@ -254,7 +254,7 @@ const sections = [
     ] },
     { name:"Gawr Gura", status:"alum", accent:"#2f6fd0", bio:"", photos:[], socials:[] },
   ]},
-  { id:"council", label:"Council", accent:"#3b82f6", flag:"🌐", members:[
+  { id:"promise", label:"Promise", accent:"#3b82f6", flag:"🌐", members:[
     { name:"IRyS", accent:"#c23a98", bio:"&ldquo;HiRyS, it's IRyS! Your seiso nephilim here to fill the world with hopium!&rdquo;<br><br>A Nephilim who was once the embodiment of hope back in &ldquo;The Paradise&rdquo;. While she has left to set off on an adventure, she continues to deliver hope through her lyrics and songs, with determination in her voice. She also bears the precarious and unstable dual nature of a half-demon and half-angel; this phenomenon can be observed on rare occasions, in the form of the most unpredictably surprising comments from IRyS herself. Bewildering those around her is but another unexpected charm of her duality.", photos:[], socials:[
       { platform:"youtube", url:"https://www.youtube.com/channel/UC8rcEBzJSleTkf_-agPM20g" },
       { platform:"twitter", url:"https://twitter.com/irys_en" },
@@ -275,17 +275,53 @@ const sections = [
     { name:"Nanashi Mumei", status:"alum", accent:"#a88a5f", bio:"", photos:[], socials:[] },
   ]},
   { id:"advent", label:"Advent", accent:"#c026d3", flag:"🌐", members:[
-    { name:"Shiori Novella", accent:"#8a6fc0", bio:"", photos:[], socials:[] },
-    { name:"Koseki Bijou", accent:"#ad9cd6", bio:"", photos:[], socials:[] },
-    { name:"Nerissa Ravencroft", accent:"#22336e", bio:"", photos:[], socials:[] },
-    { name:"Fuwawa Abyssgard", accent:"#7fc4e8", bio:"", photos:[], socials:[] },
-    { name:"Mococo Abyssgard", accent:"#ff8fc4", bio:"", photos:[], socials:[] },
+    { name:"Shiori Novella", accent:"#8a6fc0", bio:"&ldquo;Don't you think that's a wonderful story?&rdquo;<br><br>Driven by her thirst for knowledge, Shiori Novella is &ldquo;The Archiver.&rdquo; She turns her favorite stories and treasured memories into bookmarks and saves them. By misfortune, she was found to have obtained forbidden knowledge within one of her stories and was imprisoned. But to her, that experience itself is but a fascinating story. In order to continue her search for more stories, she planned and executed a prison break.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCgnfPPb9JI3e9A4cXHnWbyg" },
+      { platform:"twitter", url:"https://twitter.com/shiorinovella" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/shiori-novella/" },
+    ] },
+    { name:"Koseki Bijou", accent:"#ad9cd6", bio:"&ldquo;I hope you'll feel my radiance!&rdquo;<br><br>Formed from the crystallization of all forms of human emotion, Koseki Bijou is &ldquo;The Jewel of Emotions.&rdquo; Over years and years, emotions of beauty and filth alike have woven into her under immense pressure, resulting in an unmatched brilliance. Her ancient, mystic brilliance caused strife between the masses of the greedy, who fought over ownership of her. This led to her being imprisoned in secrecy, far from the reach of humans.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC9p_lqQ0FEDz327Vgf5JwqA" },
+      { platform:"twitter", url:"https://twitter.com/kosekibijou" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/koseki-bijou/" },
+    ] },
+    { name:"Nerissa Ravencroft", accent:"#22336e", bio:"&ldquo;Ah, the beautiful resonance of idol songs...&rdquo;<br><br>With a deep love of song, Nerissa Ravencroft is &ldquo;The Demon of Sound.&rdquo; Her powerful love turned into a dark power that inhabited her singing, giving her music the potential to drive the entire world mad. The gods, fearful of her beautiful voice, decided to seal her away for eternity, but this did not seal away her desire to sing for others.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UC_sFNM0z0MWm9A6WlKPuMMg" },
+      { platform:"twitter", url:"https://twitter.com/nerissa_en" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/nerissa-ravencroft/" },
+    ] },
+    { name:"Fuwawa Abyssgard", accent:"#7fc4e8", bio:"&ldquo;How about we get you all nice and fluffy~?&rdquo;<br><br>The fluffy older twin sister of The Demonic Guard Dogs, who were sealed away in The Cell for being a pain in the godly behind, Fuwawa Abyssgard is &ldquo;The Fluffy One.&rdquo; Her duty is to calmly look after her younger twin sister Mococo and their pet Pero, but that calmness can be short-lived. Ultimately, she is a bouncy and boisterous girl who loves to chat and play. She shares her channel and social accounts with Mococo as the duo unit FUWAMOCO.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCt9H_RpQzhxzlyBxFqrdHqA" },
+      { platform:"twitter", url:"https://twitter.com/fuwamoco_en" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/fuwawa-abyssgard/" },
+    ] },
+    { name:"Mococo Abyssgard", accent:"#ff8fc4", bio:"&ldquo;Ehehe, it's play time, whether you're ready or not!&rdquo;<br><br>The fuzzy younger twin sister of The Demonic Guard Dogs, who were sealed away in The Cell for being a pain in the godly behind, Mococo Abyssgard is &ldquo;The Fuzzy One.&rdquo; The rambunctious Mococo spent all her time imprisoned watching anime and playing games, often roping her older twin sister Fuwawa and their pet Pero in for more chaotic antics. She shares her channel and social accounts with Fuwawa as the duo unit FUWAMOCO.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCt9H_RpQzhxzlyBxFqrdHqA" },
+      { platform:"twitter", url:"https://twitter.com/fuwamoco_en" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/mococo-abyssgard/" },
+    ] },
   ]},
   { id:"justice", label:"Justice", accent:"#06b6d4", flag:"🌐", members:[
-    { name:"Elizabeth Rose Bloodflame", accent:"#8a1a2a", bio:"", photos:[], socials:[] },
-    { name:"Gigi Murin", accent:"#ffa73a", bio:"", photos:[], socials:[] },
-    { name:"Cecilia Immergreen", accent:"#3aa658", bio:"", photos:[], socials:[] },
-    { name:"Raora Panthera", accent:"#df4488", bio:"", photos:[], socials:[] },
+    { name:"Elizabeth Rose Bloodflame", accent:"#8a1a2a", bio:"&ldquo;Let my voice be your strength.&rdquo;<br><br>The Scarlet Queen, Elizabeth Rose Bloodflame paves the way for the world and all of its people. Not only does she stand at the forefront during missions with her physical prowess, but she also captures the hearts of all around her with her beautiful singing voice. She is highly self-disciplined and a bit too hard on herself, but she tends to go a bit soft on those around her. As a result, she spends her days stressed out with her work coordinating Justice, but it seems like there's nothing a nice nap in a comfy bed can't fix.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCW5uhrG1eCBYditmhL0Ykjw" },
+      { platform:"twitter", url:"https://twitter.com/ERBloodflame" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/elizabeth-rose-bloodflame/" },
+    ] },
+    { name:"Gigi Murin", accent:"#ffa73a", bio:"&ldquo;Huh? But it was funny! Don't get mad at me!&rdquo;<br><br>Born and raised under the flag of Freedom, Gigi Murin is a free-spirited Chaser and mischievous gremlin. While she is proficient in chasing down targets with pure intuition, she struggles with memorizing directions and making calculated decisions. She states that she'd rather not spend much time thinking because it makes her head hurt.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCDHABijvPBnJm7F-KlNME3w" },
+      { platform:"twitter", url:"https://twitter.com/gigimurin" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/gigi-murin/" },
+    ] },
+    { name:"Cecilia Immergreen", accent:"#3aa658", bio:"&ldquo;I came up with a new melody. Would you like to listen?&rdquo;<br><br>Cecilia Immergreen is an Ancient Automaton, with a penchant for flowers, tea, and creating music. Crafted during ancient times, Cecilia was originally made to be dedicated to eternal servitude. Yet in recent times, she began slacking off on her work, mostly immersing herself in her various crafty hobbies. With newfound interests in life, she takes on every new experience with the pure curiosity of a young girl.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCvN5h1ShZtc7nly3pezRayg" },
+      { platform:"twitter", url:"https://twitter.com/ceciliaimgreen" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/cecilia-immergreen/" },
+    ] },
+    { name:"Raora Panthera", accent:"#df4488", bio:"&ldquo;Woah, this place looks delicious! Let's go check it out!&rdquo;<br><br>The Artist with the God Eyes, Raora Panthera is endowed with investigative and descriptive prowess. Her means of information gathering are diverse, utilizing not only her agility and social skills, but also various social media platforms and other unique methods. The facial composites she draws based on the information she gathers are renowned for their accuracy. These days, her gaze is directed towards finding new pizza joints and enjoying the pop culture of the far east.", photos:[], socials:[
+      { platform:"youtube", url:"https://www.youtube.com/channel/UCl69AEx4MdqMZH7Jtsm7Tig" },
+      { platform:"twitter", url:"https://twitter.com/raorapanthera" },
+      { platform:"hololive", url:"https://hololive.hololivepro.com/en/talents/raora-panthera/" },
+    ] },
   ]},
   { id:"regloss", label:"ReGLOSS", accent:"#f43f5e", flag:"🇯🇵", members:[
     { name:"Otonose Kanade", accent:"#eec93a", bio:"", photos:[], socials:[] },
@@ -305,6 +341,16 @@ const sections = [
 
 const STATUS_LABEL = { alum:"Alum", affiliate:"Affiliate" };
 
+/* Platform icons + a color per platform.
+   - youtube/twitter use close, recognizable approximations of their
+     actual marks — standard practice for "this links to X" icons,
+     the same reason link-badge icon packs exist.
+   - hololive defaults to a generic sparkle, since I can't draw hololive's
+     actual logo/mascots myself (that's real, non-abstract character
+     art, unlike a simple platform glyph). If a social entry includes
+     an `icon` path (see the `socials` format note up top), that image
+     is used instead of the generic icon below — so once you have a
+     mascot image file, it drops right in. */
 const SOCIAL_META = {
   youtube: {
     label:"YouTube",
@@ -323,6 +369,10 @@ const SOCIAL_META = {
   }
 };
 
+/* Flatten into one ordered list so the popup can cycle through everyone.
+   This just copies each member's fields through — it does NOT invent
+   any text. If bio/photos/socials are empty, that's carried through as
+   empty, and the render functions below decide what placeholder to show. */
 const members = [];
 sections.forEach(section=>{
   section.members.forEach(member=>{
