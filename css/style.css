@@ -465,6 +465,7 @@ main{
   box-shadow:0 40px 100px -30px rgba(30,60,120,0.35), 0 0 60px -20px var(--card-accent, var(--accent));
   display:grid;
   grid-template-columns:minmax(0,290px) 1fr;
+  grid-template-rows:minmax(0, 1fr);
   overflow:hidden;
   transform:scale(0.94) translateY(14px);
   opacity:0;
@@ -483,6 +484,7 @@ main{
 }
 
 .panel-media, .panel-info{
+  min-height:0;
   transition:opacity .32s ease, transform .32s ease;
 }
 
